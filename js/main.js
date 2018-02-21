@@ -5,10 +5,11 @@ console.log('welcome');
 // if a 'firstName' cookie is set
 if(Cookies.get('firstName')){
   alert('found a cookie named firstName')
+// update the DOM to display the value of the firstName cookie  
 } else {
   alert('no cookie is found')
 }
-// update the DOM to display the value of the firstName cookie
+
 
 
 // set a cookie with their name in it
