@@ -1,11 +1,18 @@
 console.log('welcome');
 
 // By default (on page load)
+var firstName = document.getElementById('fname')
 
+function updateName(){
+  document.getElementById('welcome').innerText = 'Welcome back' + Cookies.get('firstName')
+};
 // if a 'firstName' cookie is set
 if(Cookies.get('firstName')){
   alert('found a cookie named firstName')
-// update the DOM to display the value of the firstName cookie  
+  // update the DOM to display the value of the firstName cookie
+  updateName();
+
+  document.getElementById('fname').value = Cookies.get('firstName');
 } else {
   alert('no cookie is found')
 }
@@ -23,4 +30,5 @@ document.getElementById('button').addEventListener('click', function(){
   console.log(fName);
   // store that value in a cookie
   Cookies.set('firstName', fName);
+  updateName();
 });
