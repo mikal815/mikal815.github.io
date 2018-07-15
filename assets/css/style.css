@@ -217,7 +217,7 @@ body {
   }
   
 
-  @media all and (max-width: 980px) {
+  /* @media all and (max-width: 980px) {
     .indexContainer {
       display: inline-block;
       width: 60%;
@@ -300,4 +300,4 @@ body {
       text-align: center;
     }
 
-  }
+  } */
