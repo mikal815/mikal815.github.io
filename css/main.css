@@ -2076,7 +2076,7 @@ html.no-csstransitions .home-content__main {
  * responsive:
  * home
  * ------------------------------------------------------------------- */
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1800px) {
     .home-content h1 {
         font-size: 6rem;
     }
@@ -2097,6 +2097,7 @@ html.no-csstransitions .home-content__main {
     .home-content__main {
         max-width: 800px;
     }
+    
 
     
 }
