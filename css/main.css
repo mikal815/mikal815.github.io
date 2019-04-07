@@ -2450,9 +2450,9 @@ html.no-csstransitions .home-content__main {
     padding-left: 50px;
 }
 
-.services-list .service-text {
+/* .services-list .service-text {
     margin-left: 7.8rem;
-}
+} */
 
 .services-list .service-icon {
     float: left;
@@ -3649,6 +3649,10 @@ footer .row {
     .footer-main .right {
         padding-left: 0;
     }
+}
+
+.title_header {
+    text-align: center;
 }
 
 
