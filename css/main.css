@@ -2418,6 +2418,7 @@ html.no-csstransitions .home-content__main {
  * # services
  *
  * ------------------------------------------------------------------- */
+
 .s-services {
     padding-top: 16.2rem;
     padding-bottom: 13.2rem;
@@ -2425,7 +2426,6 @@ html.no-csstransitions .home-content__main {
     color: #757575;
     position: relative;
 }
-
 
 /* ------------------------------------------------------------------- 
  * ## services list
