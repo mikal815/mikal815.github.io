@@ -1232,7 +1232,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .display-2 {
     font-family: "montserrat-medium", sans-serif;
-    font-size: 5.2rem;
+    font-size: 3.2rem;
     line-height: 1.255;
     color: #000000;
     margin-top: 0;
@@ -2151,7 +2151,7 @@ html.no-csstransitions .home-content__main {
         right: 4rem;
     }
     .home-content__scroll {
-        right: 7.5rem;
+        right: 7 .5rem;
     }
     .home-content__line {
         right: 5.5rem;
@@ -2420,8 +2420,8 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 
 .s-services {
-    padding-top: 16.2rem;
-    padding-bottom: 13.2rem;
+    padding-top: 7.2rem;
+    padding-bottom: 0;
     background-color: #FFFFFF;
     color: #757575;
     position: relative;
