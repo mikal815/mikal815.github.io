@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/images/MMwhite.png'
+import logo from '../../assets/images/MMwhitelogo.png'
 import '../Logo/Logo.css'
 
 export default function Logo() {
