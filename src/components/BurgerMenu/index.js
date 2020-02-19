@@ -60,7 +60,7 @@ const Menu = ({ open }) => {
 }
 
 const StyledBurger = styled.button`
-  position: absolute;
+  position: inherit;
   top: 5%;
   left: 2rem;
   display: flex;
