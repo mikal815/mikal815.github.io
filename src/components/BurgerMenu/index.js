@@ -6,7 +6,7 @@ const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   background: #EFFFFA;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -60,7 +60,7 @@ const Menu = ({ open }) => {
 }
 
 const StyledBurger = styled.button`
-  position: inherit;
+  position: relative;
   top: 5%;
   left: 2rem;
   display: flex;
