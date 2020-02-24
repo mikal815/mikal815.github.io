@@ -1,4 +1,9 @@
+.logo-container {
+    display: grid;
+    align-content: center;
+}
 .logo {
-    height: 100px;
-    
+    height: 90px;
+    grid-area: 'header';
+    padding-left: 20px;
 }

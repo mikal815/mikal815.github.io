@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import cybercorner from '../../../src/assets/images/cybercorner.jpg';
 
 const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #EFFFFA;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+  background: url(${cybercorner});
+  transform: ${({ open }) => open ? 'translateX(40%)' : 'translateX(100%)'};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -55,7 +56,7 @@ const Menu = ({ open }) => {
         <span role="img" aria-label="contact">📩</span>
         Contact
         </a>
-    </StyledMenu>
+    </StyledMenu >
   )
 }
 
@@ -72,6 +73,7 @@ const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
+  margin-top: 10px;
   z-index: 10;
 
   &:focus {
@@ -80,8 +82,8 @@ const StyledBurger = styled.button`
 
   div {
     width: 2rem;
-    height: 0.05rem;
-    background: ${({ open }) => open ? '#0D0C1D' : '#EFFFFA'};
+    height: 0.2rem;
+    background: ${({ open }) => open ? '#0D0C1D' : '#FFF'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -117,7 +119,7 @@ export default function BurgerMenu() {
 
   return (
 
-    <div>
+    <div className="burger-menu-container">
       <Burger open={open} setOpen={setOpen} />
       <Menu open={open} setOpen={setOpen} />
     </div>
