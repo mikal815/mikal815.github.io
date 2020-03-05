@@ -4,7 +4,7 @@ import '../Slogan/Slogan.css';
 export default function Slogan() {
     return (
         <div className="slogan">
-            Slogan
+            {/* Mensinger Applications */}
         </div>
     );
 }

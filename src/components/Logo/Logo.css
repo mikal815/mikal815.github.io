@@ -3,7 +3,7 @@
     align-content: center;
 }
 .logo {
-    height: 90px;
+    height: 70px;
     grid-area: 'header';
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
