@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import darkdunes from '../src/assets/images/dark_dunes.jpg';
 import '../src/App.css';
 import Logo from '../src/components/Logo';
 import Slogan from '../src/components/Slogan';

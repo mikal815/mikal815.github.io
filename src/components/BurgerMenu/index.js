@@ -5,11 +5,11 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #27292b;
+  background: #696969;
   transform: ${({ open }) => open ? 'translateX(40%)' : 'translateX(100%)'};
   height: 100vh;
   text-align: left;
-  padding: 2rem;
+  /* padding: 2rem; */
   position: absolute;
   top: 0;
   left: 0;
@@ -18,17 +18,18 @@ const StyledMenu = styled.nav`
       width: 100%;
     }
   a {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
     padding: 2rem 0;
     font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: #0D0C1D;
+    /* letter-spacing: 0.5rem; */
+    color: #27292b;
     text-decoration: none;
     transition: color 0.3s linear;
     @media (max-width: 576px) {
       font-size: 1.5rem;
-      text-align: center;
+      /* text-align: center; */
     }
     &:hover {
       color: #fff;
@@ -40,25 +41,28 @@ const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
       <a href="/">
-        <span role="img" aria-label="about us">💁🏻‍♂️</span>
-        About us
+        Home
       </a>
       <a href="/">
-        <span role="img" aria-label="price">💸</span>
-        Pricing
+        Portfolio
+      </a>
+      <a href="/">
+        Services
+      </a>
+      <a href="/">
+        About
         </a>
       <a href="/">
-        <span role="img" aria-label="contact">📩</span>
-        Contact
-        </a>
+        Hire Me
+      </a>
     </StyledMenu >
   )
 }
 
 const StyledBurger = styled.button`
-  position: relative;
+  position: absolute;
   top: 5%;
-  left: 2rem;
+  /* left: 2rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -68,7 +72,7 @@ const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   z-index: 10;
   &:focus {
     outline: none;
@@ -76,10 +80,12 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.2rem;
-    background: ${({ open }) => open ? '#0D0C1D' : '#FFF'};
+    background: ${({ open }) => open ? '#27292b' : '#FFF'};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
+    margin-left: 8.2rem;
+    top: 1rem;
     transform-origin: 1px;
     :first-child {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
