@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import '../src/App.css';
 import Logo from '../src/components/Logo';
 import Slogan from '../src/components/Slogan';
-import BurgerMenu from './components/BurgerMenu';
+import Sidebar from './components/Menu';
 
 const AppLayout = styled.div`
   display: grid;
@@ -16,16 +16,17 @@ const AppLayout = styled.div`
   background-color: #27292b;
 `
 
-function App(props) {
+function App() {
 
   return (
 
-    <AppLayout>
-      <Logo />
-      <BurgerMenu />
-      <Slogan />
-    </AppLayout>
-
+    <div>
+      <AppLayout>
+        <Logo />
+        <Sidebar />
+        <Slogan />
+      </AppLayout>
+    </div>
   );
 }
 
