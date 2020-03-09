@@ -2,15 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import '../src/App.css';
 import Logo from '../src/components/Logo';
-import Slogan from '../src/components/Slogan';
 import Sidebar from './components/Menu';
+import SimpleCard from './components/SimpleCard';
 
 const AppLayout = styled.div`
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 30% 1fr 20%;
   grid-template-rows: 5rem;
   height: 100vh;
   background-color: #27292b;
+  justify-content: center;
 `
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <Logo />
         <div></div>
         <Sidebar />
-        <Slogan />
+        <SimpleCard />
       </AppLayout>
     </div>
   );
