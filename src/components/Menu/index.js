@@ -2,6 +2,12 @@ import React from 'react';
 import { slide as Menu } from "react-burger-menu";
 import '../Menu/Menu.css'
 
+let styles = {
+  bmBurgerBarsHover: {
+    background: 'blue'
+  }
+}
+
 export default props => {
   return (
     <Menu right>
