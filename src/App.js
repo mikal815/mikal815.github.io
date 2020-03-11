@@ -7,8 +7,9 @@ import SimpleCard from './components/SimpleCard';
 
 const AppLayout = styled.div`
   display: grid;
-  grid-template-columns: 30% 1fr 20%;
+  grid-template-columns: 100px 1fr 100px;
   grid-template-rows: 5rem;
+  
   height: 100vh;
   background-color: #27292b;
   justify-content: center;
