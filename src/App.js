@@ -8,7 +8,7 @@ import MediaQuery from 'react-responsive'
 
 const AppLayout = styled.div`
   display: grid;
-  grid-template-columns: 100px 1fr 100px;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 5rem;
   height: 100vh;
   background-color: #27292b;
