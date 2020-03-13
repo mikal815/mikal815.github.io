@@ -1,11 +1,10 @@
 .logo-container {  
     display: grid;
     align-content: center;
-    justify-content: center;
-    /* grid-area: header; */
+    justify-content: left;
 }
 .logo {
     height: 70px;
     width: auto;
-    /* padding-left: 30px; */
+    padding-left: 30px;
 }
