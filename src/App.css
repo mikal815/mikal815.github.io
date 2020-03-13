@@ -80,4 +80,9 @@
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+
+  .span-row-2 {
+    grid-column: span 2 / auto;
+    justify-self: center;
+  }
   

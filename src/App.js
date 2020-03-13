@@ -12,7 +12,7 @@ const AppLayout = styled.div`
   grid-template-rows: 5rem;
   height: 100vh;
   background-color: #27292b;
-  justify-content: center;
+  /* justify-content: center; */
 `
 
 function App() {
@@ -21,12 +21,14 @@ function App() {
     <div>
       <AppLayout>
         <Logo />
-        <div></div>
         <Sidebar />
 
-        <MediaQuery maxDeviceWidth={500}>
-          <SimpleCard />
-        </MediaQuery>
+        <div className="span-row-2">
+          <MediaQuery maxDeviceWidth={500}>
+            <SimpleCard />
+          </MediaQuery>
+        </div>
+
 
       </AppLayout>
     </div>
