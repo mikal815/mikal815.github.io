@@ -35,7 +35,7 @@ export default function SimpleCard() {
                 </Typography>
 
                 <Typography className={classes.tag} color="textSecondary">
-                    Front End Engineer
+                    Software Developer
                     <br></br>
                     Philadelphia, PA
                 </Typography>

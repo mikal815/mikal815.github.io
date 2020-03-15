@@ -4,7 +4,8 @@ import '../src/App.css';
 import Logo from '../src/components/Logo';
 import Sidebar from './components/Menu';
 import SimpleCard from './components/SimpleCard';
-import MediaQuery from 'react-responsive'
+import MediaQuery from 'react-responsive';
+import SlideCarousel from './components/SlideCarousel';
 
 const AppLayout = styled.div`
   display: grid;
@@ -29,6 +30,10 @@ function App() {
           </MediaQuery>
         </div>
 
+        <div className="span-row-2">
+          <SlideCarousel />
+
+        </div>
 
       </AppLayout>
     </div>
