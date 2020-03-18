@@ -85,4 +85,19 @@
     grid-column: span 2 / auto;
     justify-self: center;
   }
-  
+
+  .work-tag {
+    display: flex;
+    color: #ffffff;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .work-left {
+    justify-self: flex-start;
+  }
+
+  .work-right {
+    justify-self: flex-end;
+  }

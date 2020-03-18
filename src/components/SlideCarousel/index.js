@@ -12,29 +12,36 @@ class SlideCarousel extends Component {
 
     render() {
         return (
-            <Carousel
-                width={'340px'}
-                showThumbs={false}
-                autoPlay={true}
-                infiniteLoop={true}
-            >
-                <div>
-                    <img alt="Surfer's Depot" src={SurfersDepot} />
+            <div>
+                <div className="work-tag">
+                    <h2 className="work-left">My Work</h2>
+                    <div></div>
+                    <h2 className="work-right">-View all work</h2>
                 </div>
-                <div>
-                    <img alt="Shape Shifter" src={ShapeShifter} />
-                </div>
-                <div>
-                    <img alt="Music to My Ears" src={MTME} />
-                </div>
-                <div>
-                    <img alt="Boardwalk Pier Stage" src={BPS} />
-                </div>
-                <div>
-                    <img alt="Icarus" src={Icarus} />
-                </div>
-            </Carousel >
 
+                <Carousel
+                    width={'340px'}
+                    showThumbs={false}
+                    autoPlay={true}
+                    infiniteLoop={true}
+                >
+                    <div>
+                        <img alt="Surfer's Depot" src={SurfersDepot} />
+                    </div>
+                    <div>
+                        <img alt="Shape Shifter" src={ShapeShifter} />
+                    </div>
+                    <div>
+                        <img alt="Music to My Ears" src={MTME} />
+                    </div>
+                    <div>
+                        <img alt="Boardwalk Pier Stage" src={BPS} />
+                    </div>
+                    <div>
+                        <img alt="Icarus" src={Icarus} />
+                    </div>
+                </Carousel >
+            </div>
         );
     }
 };
