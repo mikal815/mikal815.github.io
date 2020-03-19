@@ -30,13 +30,16 @@ function App() {
           </MediaQuery>
         </div>
 
+        <button className="work-tag span-row-2">
+          <div>View Work</div>
+        </button>
+
         <div className="span-row-2">
           <SlideCarousel />
-
         </div>
 
       </AppLayout>
-    </div>
+    </div >
   )
 }
 

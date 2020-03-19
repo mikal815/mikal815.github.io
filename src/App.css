@@ -84,20 +84,17 @@
   .span-row-2 {
     grid-column: span 2 / auto;
     justify-self: center;
+    align-self: center;
   }
 
-  .work-tag {
-    display: flex;
-    color: #ffffff;
-    justify-content: space-between;
-    padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .work-left {
-    justify-self: flex-start;
-  }
-
-  .work-right {
-    justify-self: flex-end;
+  .work-tag { 
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: #a6aeb4;
+    background-color: #27292b;
+    border: 4px solid #a6aeb4;
+    font-size: 1.4rem; 
+    width: 12rem;
+    height: 60px;
+    display: grid;
+    place-content: center;
   }

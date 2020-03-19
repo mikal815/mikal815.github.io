@@ -9,18 +9,12 @@ import Icarus from '../../assets/images/Icarus.PNG';
 
 class SlideCarousel extends Component {
 
-
     render() {
         return (
             <div>
-                <div className="work-tag">
-                    <h2 className="work-left">My Work</h2>
-                    <div></div>
-                    <h2 className="work-right">-View all work</h2>
-                </div>
 
                 <Carousel
-                    width={'340px'}
+                    width={'21.3rem'}
                     showThumbs={false}
                     autoPlay={true}
                     infiniteLoop={true}
