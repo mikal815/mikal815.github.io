@@ -18,6 +18,7 @@ class SlideCarousel extends Component {
                     showThumbs={false}
                     autoPlay={true}
                     infiniteLoop={true}
+                    showStatus={false}
                 >
                     <div>
                         <img alt="Surfer's Depot" src={SurfersDepot} />
