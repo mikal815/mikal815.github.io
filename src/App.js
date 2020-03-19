@@ -10,7 +10,7 @@ import SlideCarousel from './components/SlideCarousel';
 const AppLayout = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 5rem;
+  grid-template-rows: 5rem 17rem 5rem 19rem;
   height: 100vh;
   background-color: #27292b;
   /* justify-content: center; */
@@ -36,6 +36,12 @@ function App() {
 
         <div className="span-row-2">
           <SlideCarousel />
+        </div>
+
+        <div className="footer span-row-2">
+          <div>portfolio</div>
+          <div>skills</div>
+          <div>hire me</div>
         </div>
 
       </AppLayout>
