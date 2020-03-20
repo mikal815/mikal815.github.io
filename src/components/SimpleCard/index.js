@@ -6,18 +6,18 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: 260,
-        maxWidth: 260,
-        height: 260,
+        minWidth: '16.5rem',
+        maxWidth: '16.5rem',
+        height: '11rem',
         backgroundColor: 'rgb(34, 125, 91)',
         color: '#ffffff'
     },
     slogan: {
-        fontSize: 36,
-        marginTop: '-11px'
+        fontSize: 23,
+        // marginTop: '-11px'
     },
     tag: {
-        fontSize: 20,
+        fontSize: 16,
         color: '#29272b'
 
     }
@@ -35,7 +35,7 @@ export default function SimpleCard() {
                 </Typography>
 
                 <Typography className={classes.tag} color="textSecondary">
-                    Software Developer
+                    Web Developer
                     <br></br>
                     Philadelphia, PA
                 </Typography>

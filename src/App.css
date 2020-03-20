@@ -87,14 +87,14 @@
     align-self: center;
   }
 
-  .work-tag { 
+  .view-work { 
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #a6aeb4;
     background-color: #27292b;
-    border: 4px solid #a6aeb4;
-    font-size: 1.4rem; 
-    width: 12rem;
-    height: 60px;
+    border: 2px solid #a6aeb4;
+    font-size: 1.1rem; 
+    width: 10rem;
+    height: 50px;
     display: grid;
     place-content: center;
   }
@@ -108,7 +108,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 75px;
+    height: 65px;
     color: #ffffff;
     grid-template-columns: 3fr;
   }

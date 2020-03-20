@@ -10,10 +10,10 @@ import SlideCarousel from './components/SlideCarousel';
 const AppLayout = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 5rem 17rem 5rem 19rem;
+  grid-template-rows: 2rem 17rem 2rem 17rem 1rem;
+  grid-template-rows: 10% 28% 10% 40% 10%;
   height: 100vh;
   background-color: #27292b;
-  /* justify-content: center; */
 `
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
           </MediaQuery>
         </div>
 
-        <button className="work-tag span-row-2">
+        <button className="view-work span-row-2">
           <div>View Work</div>
         </button>
 
