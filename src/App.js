@@ -6,6 +6,7 @@ import Sidebar from './components/Menu';
 import SimpleCard from './components/SimpleCard';
 import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
+import CardFlip from '../src/components/CardFlip';
 
 const AppLayout = styled.div`
   display: grid;
@@ -26,7 +27,8 @@ function App() {
 
         <div className="span-row-2">
           <MediaQuery maxDeviceWidth={500}>
-            <SimpleCard />
+            {/* <SimpleCard /> */}
+            <CardFlip />
           </MediaQuery>
         </div>
 
