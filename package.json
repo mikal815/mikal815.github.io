@@ -21,7 +21,7 @@
     "react-scripts": "3.3.1",
     "styled-components": "^5.0.1"
   },
-  "homepage": "https://mikal815.github.io/",
+  "homepage": "https://mikal815.github.io/mikal815",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
