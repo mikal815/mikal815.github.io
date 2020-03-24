@@ -16,7 +16,7 @@ const AppLayout = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 2rem 17rem 2rem 17rem 1rem;
   grid-template-rows: 10% 28% 10% 40% 10%;
-  /* height: 100vh; */
+  height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   background-color: #27292b;
 `
