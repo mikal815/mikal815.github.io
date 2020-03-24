@@ -14,7 +14,7 @@ class SlideCarousel extends Component {
             <div>
 
                 <Carousel
-                    width={'21.3rem'}
+                    width={'18.3rem'}
                     showThumbs={false}
                     autoPlay={true}
                     infiniteLoop={true}

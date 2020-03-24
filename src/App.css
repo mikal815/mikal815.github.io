@@ -92,9 +92,9 @@
     color: #a6aeb4;
     background-color: #27292b;
     border: 2px solid #a6aeb4;
-    font-size: 1.1rem; 
-    width: 10rem;
-    height: 50px;
+    font-size: 0.8rem; 
+    width: 8rem;
+    height: 38px;
     display: grid;
     place-content: center;
   }
@@ -108,7 +108,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    height: 65px;
+    height: 45px;
     color: #ffffff;
     grid-template-columns: 3fr;
   }

@@ -6,14 +6,14 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: '14.5rem',
-        maxWidth: '14.5rem',
-        height: '11rem',
+        minWidth: '13.5rem',
+        maxWidth: '13.5rem',
+        height: '9.5rem',
         backgroundColor: 'rgb(34, 125, 91)',
         color: '#ffffff'
     },
     slogan: {
-        fontSize: 23,
+        fontSize: 20,
     },
     tag: {
         fontSize: 16,
