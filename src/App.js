@@ -18,38 +18,37 @@ const AppLayout = styled.div`
   height: 100vh;
   /* height: calc(var(--vh, 1vh) * 100); */
   background-color: #27292b;
+  position: relative;
 `
 
 function App() {
 
   return (
-    <div>
-      <AppLayout>
-        <Logo />
-        <Sidebar />
+    <AppLayout>
+      <Logo />
+      <Sidebar />
 
-        <div className="span-row-2">
-          <MediaQuery maxDeviceWidth={500}>
-            <CardFlip />
-          </MediaQuery>
-        </div>
+      <div className="span-row-2">
+        <MediaQuery maxDeviceWidth={500}>
+          <CardFlip />
+        </MediaQuery>
+      </div>
 
-        <button className="view-work span-row-2">
-          <div>View Work</div>
-        </button>
+      <button className="view-work span-row-2">
+        <div>View Work</div>
+      </button>
 
-        <div className="span-row-2">
-          <SlideCarousel />
-        </div>
+      <div className="span-row-2">
+        <SlideCarousel />
+      </div>
 
-        <div className="footer span-row-2">
-          <div>portfolio</div>
-          <div>skills</div>
-          <div>hire me</div>
-        </div>
+      <div className="footer span-row-2">
+        <div>portfolio</div>
+        <div>skills</div>
+        <div>hire me</div>
+      </div>
 
-      </AppLayout>
-    </div >
+    </AppLayout>
   )
 }
 
