@@ -24,7 +24,7 @@ const AppLayout = styled.div`
 function App() {
 
   return (
-    <div className="main">
+    <div>
       <AppLayout>
         <Logo />
         <Sidebar />

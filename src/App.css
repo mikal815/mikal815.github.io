@@ -112,8 +112,3 @@
     color: #ffffff;
     grid-template-columns: 3fr;
   }
-
-  .main {
-    position: fixed;
-    right: 0;
-  }
