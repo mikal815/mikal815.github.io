@@ -3,13 +3,12 @@ import styled from 'styled-components';
 import '../src/App.css';
 import Logo from '../src/components/Logo';
 import Sidebar from './components/Menu';
-import SimpleCard from './components/SimpleCard';
 import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
 import CardFlip from '../src/components/CardFlip';
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 const AppLayout = styled.div`
   display: grid;
@@ -17,7 +16,7 @@ const AppLayout = styled.div`
   grid-template-rows: 2rem 17rem 2rem 17rem 1rem;
   grid-template-rows: 10% 28% 10% 40% 10%;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  /* height: calc(var(--vh, 1vh) * 100); */
   background-color: #27292b;
 `
 
@@ -31,7 +30,6 @@ function App() {
 
         <div className="span-row-2">
           <MediaQuery maxDeviceWidth={500}>
-            {/* <SimpleCard /> */}
             <CardFlip />
           </MediaQuery>
         </div>
