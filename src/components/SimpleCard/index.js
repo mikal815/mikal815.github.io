@@ -8,10 +8,10 @@ const useStyles = makeStyles({
     root: {
         minWidth: '15.5rem',
         maxWidth: '19.5rem',
-        minHeight: '8.5rem',
-        maxHeight: '10.5rem',
-        marginRight: '1rem',
-        marginLeft: '1rem',
+        minHeight: '5.5rem',
+        maxHeight: '8.5rem',
+        marginRight: '5vw',
+        marginLeft: '5vw',
         height: '9.5rem',
         backgroundColor: 'rgb(34, 125, 91)',
         color: '#ffffff'

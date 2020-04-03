@@ -15,6 +15,7 @@ const AppLayout = styled.div`
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: 2rem 12rem 1rem 16rem 1rem; */
   grid-template-rows: 3.5rem auto;
+  row-gap: 0.5rem;
   /* grid-row-gap: 5px; */
   height: 100vh;
   /* height: calc(var(--vh, 1vh) * 100); */
