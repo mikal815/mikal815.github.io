@@ -14,7 +14,13 @@ class SlideCarousel extends Component {
             <div>
 
                 <Carousel
-                    width={'18.3rem'}
+                    width={'90vw'}
+
+                    minHeight={'5.5rem'}
+                    maxHeight={'8.5rem'}
+                    marginRight={'5vw'}
+                    marginLeft={'5vw'}
+
                     showThumbs={false}
                     autoPlay={true}
                     infiniteLoop={true}
