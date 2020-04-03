@@ -13,11 +13,15 @@ import SlideCarousel from './components/SlideCarousel';
 const AppLayout = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: 2rem 17rem 2rem 17rem 1rem; */
-  grid-template-rows: 10% 28% 10% 40% 10%;
+  /* grid-template-rows: 2rem 12rem 1rem 16rem 1rem; */
+  grid-template-rows: auto;
+  /* grid-row-gap: 5px; */
   height: 100vh;
   /* height: calc(var(--vh, 1vh) * 100); */
   background-color: #27292b;
+  position: fixed;
+  right: 0;
+  left: 0;
 `
 
 function App() {
@@ -26,7 +30,6 @@ function App() {
     <AppLayout>
       <Logo />
       <Sidebar />
-
       <div className="span-row-2">
         <MediaQuery maxDeviceWidth={500}>
           <SimpleCard />
