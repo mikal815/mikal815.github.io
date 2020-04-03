@@ -18,7 +18,7 @@ const AppLayout = styled.div`
   position: fixed;
   right: 0;
   left: 0;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 `
 
 function App() {
