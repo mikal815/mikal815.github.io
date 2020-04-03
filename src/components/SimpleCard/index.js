@@ -6,8 +6,12 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
     root: {
-        minWidth: '13.5rem',
-        maxWidth: '13.5rem',
+        minWidth: '15.5rem',
+        maxWidth: '19.5rem',
+        minHeight: '8.5rem',
+        maxHeight: '10.5rem',
+        marginRight: '1rem',
+        marginLeft: '1rem',
         height: '9.5rem',
         backgroundColor: 'rgb(34, 125, 91)',
         color: '#ffffff'
