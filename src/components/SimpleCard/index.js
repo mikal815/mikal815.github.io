@@ -15,10 +15,11 @@ const useStyles = makeStyles({
         color: '#ffffff'
     },
     slogan: {
-        fontSize: '1.2em',
+        fontSize: '1.3em',
+        paddingBottom: '6px'
     },
     tag: {
-        fontSize: '0.9em',
+        fontSize: '1em',
         color: '#29272b'
 
     }
