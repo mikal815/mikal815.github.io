@@ -7,18 +7,18 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
     root: {
         width: '90vw',
-        minHeight: '5.5rem',
-        maxHeight: '8.5rem',
+        minHeight: '15vh',
+        maxHeight: '23vh',
         marginRight: '5vw',
         marginLeft: '5vw',
         backgroundColor: 'rgb(34, 125, 91)',
         color: '#ffffff'
     },
     slogan: {
-        fontSize: 20,
+        fontSize: '1.2em',
     },
     tag: {
-        fontSize: 16,
+        fontSize: '0.9em',
         color: '#29272b'
 
     }
@@ -32,11 +32,11 @@ export default function SimpleCard() {
 
             <CardContent>
                 <Typography className={classes.slogan} variant="h5" component="h2">
-                    I actualize intuative and engaging web experiences ~
+                    I actualize intuative and engaging experiences ~
                 </Typography>
 
                 <Typography className={classes.tag} color="textSecondary">
-                    Web Developer
+                    Software Developer
                     <br></br>
                     Philadelphia, PA
                 </Typography>

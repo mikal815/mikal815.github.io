@@ -110,6 +110,6 @@
     /* bottom: 0; */
     height: 45px;
     color: #ffffff;
-    grid-template-columns: 3fr;
+    /* grid-template-columns: 3fr; */
     /* margin-top: 10px; */
   }
