@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const CardStyle = styled.div`
     display: grid;
-    place-content: center;
+    justify-items: left;
     border-radius: 3px;
     width: 90vw;
     min-height: 15vh;
@@ -13,11 +13,11 @@ const CardStyle = styled.div`
     margin-left: 5vw;
     background-color: #227d5b;
     color: #ffffff;
-    padding: 15px;
+    padding: 15px 20px 15px 20px;
 `
 
 const Slogan = styled.div`
-    font-size: 1.2rem;
+    font-size: 6vw;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.33;
@@ -27,7 +27,7 @@ const Slogan = styled.div`
 
 const Tag = styled.div`
     color: #29272b;
-    font-size: 0.9rem;
+    font-size: 4.5vw;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.5;
@@ -37,8 +37,9 @@ const Tag = styled.div`
 export default function Card() {
     return (
         <CardStyle>
-            <Slogan>I actualize intuative and engaging experiences ~</Slogan>
-            <Tag>Software Developer<br></br>Philadelphia, PA</Tag>
+            <Slogan>I actualize intuative and <br></br>engaging experiences ~</Slogan>
+            <Tag>Software Developer</Tag>
+            <Tag>Philadelphia, PA</Tag>
         </CardStyle>
     )
 }
