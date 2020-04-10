@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import '../src/App.css';
 import Logo from '../src/components/Logo';
 import Sidebar from './components/Menu';
-import SimpleCard from '../src/components/SimpleCard';
+import Card from '../src/components/Card';
 import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
 import CardFlip from './components/CardFlip';
@@ -31,7 +31,7 @@ function App() {
       <div className="span-row-2">
         <MediaQuery maxDeviceWidth={500}>
           <CardFlip>
-            <SimpleCard />
+            <Card />
           </CardFlip>
         </MediaQuery>
       </div>

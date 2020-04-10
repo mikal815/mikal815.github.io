@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactCardFlip from 'react-card-flip';
-import SimpleCard from '../SimpleCard';
+import Card from '../Card';
 import '../CardFlip/CardFlip.css'
 
 // import { useState, useEffect } from 'react';
@@ -57,11 +57,11 @@ export default class CardFlip extends React.Component {
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
                 <button className="card-button" onClick={this.handleClick}>
-                    <SimpleCard />
+                    <Card />
                 </button>
 
                 <button className="card-button" onClick={this.handleClick}>
-                    <SimpleCard />
+                    <Card />
                 </button>
             </ReactCardFlip>
         )
