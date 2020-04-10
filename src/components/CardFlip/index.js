@@ -49,6 +49,10 @@ export default class CardFlip extends React.Component {
         this.setState(prevState => ({ isFlipped: !prevState.isFlipped }));
     }
 
+    componentDidMount() {
+        this.setState(prevState => ({ isFlipped: !prevState.isFlipped }))
+    }
+
     render() {
         return (
             <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="vertical">
