@@ -12,7 +12,8 @@ const useStyles = makeStyles({
         marginRight: '5vw',
         marginLeft: '5vw',
         backgroundColor: 'rgb(34, 125, 91)',
-        color: '#ffffff'
+        color: '#ffffff',
+        padding: '4px'
     },
     slogan: {
         fontSize: '1.3em',
