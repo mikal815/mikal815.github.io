@@ -12,11 +12,11 @@ const CardStyle = styled.div`
     margin-left: 5vw;
     background-color: #227d5b;
     color: #ffffff;
-    padding: 10px 10px 10px 20px;
+    padding: 10px;
 `
 
 const Slogan = styled.div`
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.33;
@@ -26,7 +26,7 @@ const Slogan = styled.div`
 
 const Tag = styled.div`
     color: #29272b;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     line-height: 1.5;
