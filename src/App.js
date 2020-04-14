@@ -9,7 +9,7 @@ import SlideCarousel from './components/SlideCarousel';
 import CardFlip from './components/CardFlip';
 
 
-const AppLayout = styled.div`
+const MobileLayout = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   /* grid-template-rows: 8vh auto; */
@@ -24,33 +24,33 @@ const AppLayout = styled.div`
 function App() {
 
   return (
-    <AppLayout>
-      <Logo />
-      <Sidebar />
+    <MediaQuery maxDeviceWidth={500}>
+      <MobileLayout>
+        <Logo />
+        <Sidebar />
 
-      <div className="span-row-2">
-        <MediaQuery maxDeviceWidth={500}>
+        <div className="span-row-2">
           <CardFlip>
             <Card />
           </CardFlip>
-        </MediaQuery>
-      </div>
+        </div>
 
-      <button className="view-work span-row-2">
-        <div>View Work</div>
-      </button>
+        <button className="view-work span-row-2">
+          <div>View Work</div>
+        </button>
 
-      <div className="span-row-2">
-        <SlideCarousel />
-      </div>
+        <div className="span-row-2">
+          <SlideCarousel />
+        </div>
 
-      <footer className="footer span-row-2">
-        <div>portfolio</div>
-        <div>skills</div>
-        <div>hire me</div>
-      </footer>
+        <footer className="footer span-row-2">
+          <div>portfolio</div>
+          <div>skills</div>
+          <div>hire me</div>
+        </footer>
 
-    </AppLayout>
+      </MobileLayout>
+    </MediaQuery>
   )
 }
 
