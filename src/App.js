@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import '../src/App.css';
 import Logo from '../src/components/Logo';
 import Sidebar from './components/Menu';
-import Card from '../src/components/Card';
 import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
 import CardFlip from './components/CardFlip';

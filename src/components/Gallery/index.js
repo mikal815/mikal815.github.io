@@ -7,14 +7,20 @@ import SurfersDepot from '../../assets/images/surfersdepot.PNG';
 import '../Gallery/Gallery.css';
 
 export default function Gallery() {
+
+    function handleClick(e) {
+        e.preventDefault();
+        console.log('The link was clicked.');
+    }
+
     return (
-        <div class="container">
+        <div className="container">
             <div id="carousel">
-                <figure><img src={BPS} alt="" /></figure>
-                <figure><img src={Icarus} alt="" /></figure>
-                <figure><img src={MTME} alt="" /></figure>
-                <figure><img src={Shapes} alt="" /></figure>
-                <figure><img src={SurfersDepot} alt="" /></figure>
+                <figure onClick={handleClick}><img src={BPS} alt="Boardwalk Pier Stage" /></figure>
+                <figure onClick={handleClick}><img src={Icarus} alt="Icarus" /></figure>
+                <figure onClick={handleClick}><img src={MTME} alt="Music to My Ears" /></figure>
+                <figure onClick={handleClick}><img src={Shapes} alt="Shape Shifter" /></figure>
+                <figure onClick={handleClick}><img src={SurfersDepot} alt="Surfer's Depot" /></figure>
             </div>
         </div>
     )
