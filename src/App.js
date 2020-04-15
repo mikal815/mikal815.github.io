@@ -7,6 +7,7 @@ import Card from '../src/components/Card';
 import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
 import CardFlip from './components/CardFlip';
+import Gallery from './components/Gallery';
 
 
 const MobileLayout = styled.div`
@@ -21,36 +22,58 @@ const MobileLayout = styled.div`
   left: 0;
 `
 
+const TabletLayout = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 8vh auto; */
+  grid-auto-rows: 1fr;
+  height: 100%;
+  background-color: #27292b;
+  position: fixed;
+  right: 0;
+  left: 0;
+`
+
 function App() {
 
   return (
-    <MediaQuery maxDeviceWidth={500}>
-      <MobileLayout>
-        <Logo />
-        <Sidebar />
+    <>
+      <MediaQuery maxDeviceWidth={500}>
+        <MobileLayout>
+          <Logo />
+          <Sidebar />
 
-        <div className="span-row-2">
-          <CardFlip>
-            <Card />
-          </CardFlip>
-        </div>
+          <div className="span-row-2">
+            <CardFlip />
+          </div>
 
-        <button className="view-work span-row-2">
-          <div>View Work</div>
-        </button>
+          <button className="view-work span-row-2">
+            <div>View Work</div>
+          </button>
 
-        <div className="span-row-2">
-          <SlideCarousel />
-        </div>
+          <div className="span-row-2">
+            <SlideCarousel />
+          </div>
 
-        <footer className="footer span-row-2">
-          <div>portfolio</div>
-          <div>skills</div>
-          <div>hire me</div>
-        </footer>
+          <footer className="footer span-row-2">
+            <div>portfolio</div>
+            <div>services</div>
+            <div>hire me</div>
+          </footer>
 
-      </MobileLayout>
-    </MediaQuery>
+        </MobileLayout>
+      </MediaQuery>
+
+      <MediaQuery minDeviceWidth={500}>
+        <TabletLayout>
+          <Logo />
+          <Sidebar />
+          <div className="span-row-2">
+            <Gallery />
+          </div>
+        </TabletLayout>
+      </MediaQuery>
+    </>
   )
 }
 
