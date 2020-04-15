@@ -70,6 +70,11 @@ function App() {
           <div className="span-row-2">
             <Gallery />
           </div>
+          <footer className="footer span-row-2">
+            <div>portfolio</div>
+            <div>services</div>
+            <div>hire me</div>
+          </footer>
         </TabletLayout>
       </MediaQuery>
     </>
