@@ -8,19 +8,14 @@ import '../Gallery/Gallery.css';
 
 export default function Gallery() {
 
-    function handleClick(e) {
-        e.preventDefault();
-        console.log('The link was clicked.');
-    }
-
     return (
         <div className="container">
             <div id="carousel">
-                <figure onClick={handleClick}><img src={BPS} alt="Boardwalk Pier Stage" /></figure>
-                <figure onClick={handleClick}><img src={Icarus} alt="Icarus" /></figure>
-                <figure onClick={handleClick}><img src={MTME} alt="Music to My Ears" /></figure>
-                <figure onClick={handleClick}><img src={Shapes} alt="Shape Shifter" /></figure>
-                <figure onClick={handleClick}><img src={SurfersDepot} alt="Surfer's Depot" /></figure>
+                <figure><a href="http://dreary-head.surge.sh/"><img src={BPS} alt="Boardwalk Pier Stage" /></a></figure>
+                <figure><a href="http://superb-science.surge.sh/"><img src={Icarus} alt="Icarus" /></a></figure>
+                <figure><a href="https://sleepy-savannah-81002.herokuapp.com/"><img src={MTME} alt="Music to My Ears" /></a></figure>
+                <figure><a href="http://fluffy-zoo.surge.sh/"><img src={Shapes} alt="Shape Shifter" /></a></figure>
+                <figure><a href="https://vast-mesa-70867.herokuapp.com/"><img src={SurfersDepot} alt="Surfer's Depot" /></a></figure>
             </div>
         </div>
     )

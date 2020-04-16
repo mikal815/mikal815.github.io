@@ -25,21 +25,31 @@ class SlideCarousel extends Component {
                     showStatus={false}
                     showIndicators={false}
                 >
-                    <div>
-                        <img alt="Surfer's Depot" src={SurfersDepot} />
-                    </div>
-                    <div>
-                        <img alt="Shape Shifter" src={ShapeShifter} />
-                    </div>
-                    <div>
-                        <img alt="Music to My Ears" src={MTME} />
-                    </div>
-                    <div>
-                        <img alt="Boardwalk Pier Stage" src={BPS} />
-                    </div>
-                    <div>
-                        <img alt="Icarus" src={Icarus} />
-                    </div>
+                    <a href="https://vast-mesa-70867.herokuapp.com/">
+                        <div>
+                            <img alt="Surfer's Depot" src={SurfersDepot} />
+                        </div>
+                    </a>
+                    <a href="http://fluffy-zoo.surge.sh/">
+                        <div>
+                            <img alt="Shape Shifter" src={ShapeShifter} />
+                        </div>
+                    </a>
+                    <a href="https://sleepy-savannah-81002.herokuapp.com/">
+                        <div>
+                            <img alt="Music to My Ears" src={MTME} />
+                        </div>
+                    </a>
+                    <a href="http://dreary-head.surge.sh/">
+                        <div>
+                            <img alt="Boardwalk Pier Stage" src={BPS} />
+                        </div>
+                    </a>
+                    <a href="http://superb-science.surge.sh/">
+                        <div>
+                            <img alt="Icarus" src={Icarus} />
+                        </div>
+                    </a>
                 </Carousel >
             </div>
         );
