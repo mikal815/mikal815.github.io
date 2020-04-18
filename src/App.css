@@ -118,3 +118,8 @@
     display: flex;
     width: 90vw;
   }
+
+  .heading {
+    font-size: x-large;
+    font-weight: bold;
+  }

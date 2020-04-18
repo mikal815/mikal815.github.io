@@ -12,8 +12,8 @@ const SkillsCard = styled.div`
     max-height: 23vh;
     min-width: 15vh;
     max-width: 23vh;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
     background-color: #227d5b;
     color: #ffffff;
     padding: 10px;

@@ -70,19 +70,19 @@ function App() {
 
           <div className="skills-card span-row-2">
             <SkillsCard>
-              <div>FRONT END</div>
+              <div className="heading">FRONT END</div>
               <div>HTML5</div>
               <div>CSS3 | SASS</div>
               <div>Javascript</div>
               <div>React | Redux</div>
             </SkillsCard>
             <SkillsCard>
-              <div>SERVER</div>
+              <div className="heading">SERVER</div>
               <div>NodeJS</div>
               <div>Express</div>
             </SkillsCard>
             <SkillsCard>
-              <div>DATABASE</div>
+              <div className="heading">DATABASE</div>
               <div>mySQL</div>
               <div>MongoDB</div>
             </SkillsCard>
