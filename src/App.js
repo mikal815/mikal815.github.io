@@ -7,6 +7,7 @@ import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
 import CardFlip from './components/CardFlip';
 import Gallery from './components/Gallery';
+import SkillsCard from './components/SkillsCard';
 
 
 const MobileLayout = styled.div`
@@ -23,9 +24,8 @@ const MobileLayout = styled.div`
 
 const TabletLayout = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: 8vh auto; */
-  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  /* grid-auto-rows: 1fr; */
   height: 100%;
   background-color: #27292b;
   position: fixed;
@@ -67,6 +67,28 @@ function App() {
         <TabletLayout>
           <Logo />
           <Sidebar />
+
+          <div className="skills-card span-row-2">
+            <SkillsCard>
+              <div>FRONT END</div>
+              <div>HTML5</div>
+              <div>CSS3 | SASS</div>
+              <div>Javascript</div>
+              <div>React | Redux</div>
+            </SkillsCard>
+            <SkillsCard>
+              <div>SERVER</div>
+              <div>NodeJS</div>
+              <div>Express</div>
+            </SkillsCard>
+            <SkillsCard>
+              <div>DATABASE</div>
+              <div>mySQL</div>
+              <div>MongoDB</div>
+            </SkillsCard>
+          </div>
+
+
           <div className="span-row-2">
             <Gallery />
           </div>

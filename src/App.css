@@ -113,3 +113,8 @@
     /* grid-template-columns: 3fr; */
     /* margin-top: 10px; */
   }
+  
+  .skills-card {
+    display: flex;
+    width: 90vw;
+  }
