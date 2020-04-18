@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const SkillsCard = styled.div`
    display: grid;
    justify-items: center;
+   justify-content: center;
    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
    align-items: center;
     border-radius: 3px;
@@ -12,8 +13,8 @@ const SkillsCard = styled.div`
     max-height: 23vh;
     min-width: 15vh;
     max-width: 23vh;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     background-color: #227d5b;
     color: #ffffff;
     padding: 10px;
