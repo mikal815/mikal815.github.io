@@ -7,8 +7,9 @@ import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
 import CardFlip from './components/CardFlip';
 import Gallery from './components/Gallery';
-import SkillsCard from './components/SkillsCard';
-
+import frontend from './assets/icons/frontend.svg';
+import backend from './assets/icons/backend.svg';
+import database from './assets/icons/database.svg';
 
 const MobileLayout = styled.div`
   display: grid;
@@ -68,24 +69,27 @@ function App() {
           <Logo />
           <Sidebar />
 
-          <div className="skills-card span-row-2">
-            <SkillsCard>
+          <div className="skills-container span-row-2">
+            <div className="skills-card">
+              <img src={frontend} alt="frontend icon" />
               <div className="heading">FRONT END</div>
               <div>HTML5</div>
               <div>CSS3 | SASS</div>
               <div>Javascript</div>
               <div>React | Redux</div>
-            </SkillsCard>
-            <SkillsCard>
+            </div>
+            <div className="skills-card">
+              <img src={backend} alt="frontend icon" />
               <div className="heading">SERVER</div>
               <div>NodeJS</div>
               <div>Express</div>
-            </SkillsCard>
-            <SkillsCard>
+            </div>
+            <div className="skills-card">
+              <img src={database} alt="frontend icon" />
               <div className="heading">DATABASE</div>
               <div>mySQL</div>
               <div>MongoDB</div>
-            </SkillsCard>
+            </div>
           </div>
 
 
