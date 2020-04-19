@@ -129,11 +129,8 @@
    line-height: 1.5;
    letter-spacing: 0.00938em;
    border-radius: 3px;
-   width: 25vw;
-   min-height: 17vh;
-   max-height: 23vh;
-   min-width: 15vh;
-   max-width: 23vh;
+   width: 10rem;
+   height: 17rem;
    margin-right: 1rem;
    margin-left: 1rem;
    background-color: #227d5b;
@@ -149,5 +146,6 @@
     /* font-weight: 400; */
     line-height: 1.33;
     letter-spacing: 0em;
-    padding-bottom: 5px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }

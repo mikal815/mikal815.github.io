@@ -83,12 +83,16 @@ function App() {
               <div className="heading">SERVER</div>
               <div>NodeJS</div>
               <div>Express</div>
+              <div>-</div>
+              <div>-</div>
             </div>
             <div className="skills-card">
               <img src={database} alt="frontend icon" />
               <div className="heading">DATABASE</div>
               <div>mySQL</div>
               <div>MongoDB</div>
+              <div>-</div>
+              <div>-</div>
             </div>
           </div>
 
