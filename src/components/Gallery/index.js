@@ -1,9 +1,9 @@
 import React from 'react';
-import BPS from '../../assets/images/BPS.PNG';
-import Icarus from '../../assets/images/Icarus.PNG';
-import MTME from '../../assets/images/mtme.PNG';
-import Shapes from '../../assets/images/Shapes.PNG';
-import SurfersDepot from '../../assets/images/surfersdepot.PNG';
+import BPS from '../../assets/images/BPS-small.PNG';
+import Icarus from '../../assets/images/Icarus-small.PNG';
+import MTME from '../../assets/images/mtme-small.PNG';
+import Shapes from '../../assets/images/Shapes-small.PNG';
+import SurfersDepot from '../../assets/images/surfersdepot-small.PNG';
 import '../Gallery/Gallery.css';
 
 export default function Gallery() {

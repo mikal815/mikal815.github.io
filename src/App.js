@@ -96,7 +96,6 @@ function App() {
             </div>
           </div>
 
-
           <div className="span-row-2">
             <Gallery />
           </div>
