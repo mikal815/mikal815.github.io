@@ -69,6 +69,12 @@ function App() {
           <Logo />
           <Sidebar />
 
+          <div className="slogan-container span-row-2">
+            <div className="slogan-text">
+              I actualize intuative and <br></br>engaging experiences ~
+            </div>
+          </div>
+
           <div className="skills-container span-row-2">
             <div className="skills-card">
               <img src={frontend} alt="frontend icon" />
@@ -95,6 +101,10 @@ function App() {
               <div>-</div>
             </div>
           </div>
+
+          <button className="view-work span-row-2">
+            <div>View Work</div>
+          </button>
 
           <div className="span-row-2">
             <Gallery />

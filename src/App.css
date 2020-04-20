@@ -149,3 +149,15 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
+
+  .slogan-container {
+    display: grid;
+    justify-content: center;
+  }
+
+  .slogan-text {
+    color: #ffffff;
+    font-size: 2.5em;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  }
+  
