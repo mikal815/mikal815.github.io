@@ -10,6 +10,7 @@ import Gallery from './components/Gallery';
 import frontend from './assets/icons/frontend.svg';
 import backend from './assets/icons/backend.svg';
 import database from './assets/icons/database.svg';
+import additional from './assets/icons/additional.svg';
 
 const MobileLayout = styled.div`
   display: grid;
@@ -27,7 +28,6 @@ const TabletLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  /* grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
   height: 100%;
   background-color: #27292b;
   position: fixed;
@@ -84,20 +84,35 @@ function App() {
               <div>CSS3 | SASS</div>
               <div>Javascript</div>
               <div>React | Redux</div>
+              <div>-</div>
+              <div>-</div>
             </div>
             <div className="skills-card">
               <img src={backend} alt="frontend icon" />
               <div className="heading">SERVER</div>
               <div>NodeJS</div>
               <div>Express</div>
-              <div>-</div>
-              <div>-</div>
+              <div>REST API</div>
+              <div>Authentication/<br></br>Authorization</div>
+              <div>Payment systems</div>
             </div>
             <div className="skills-card">
               <img src={database} alt="frontend icon" />
               <div className="heading">DATABASE</div>
               <div>mySQL</div>
               <div>MongoDB</div>
+              <div>Password</div>
+              <div>Hashing</div>
+              <div>-</div>
+              <div>-</div>
+            </div>
+            <div className="skills-card">
+              <img src={additional} alt="additional icon" />
+              <div className="heading">ADDITIONAL</div>
+              <div>Unit Testing</div>
+              <div>End to End testing</div>
+              <div>Continuous</div>
+              <div>Integration</div>
               <div>-</div>
               <div>-</div>
             </div>
