@@ -101,7 +101,7 @@ function App() {
               <div className="heading">DATABASE</div>
               <div>mySQL</div>
               <div>MongoDB</div>
-              <div>Password</div>
+              <div>Password-</div>
               <div>Hashing</div>
               <div>-</div>
               <div>-</div>
@@ -111,7 +111,7 @@ function App() {
               <div className="heading">ADDITIONAL</div>
               <div>Unit Testing</div>
               <div>End to End testing</div>
-              <div>Continuous</div>
+              <div>Continuous-</div>
               <div>Integration</div>
               <div>-</div>
               <div>-</div>
