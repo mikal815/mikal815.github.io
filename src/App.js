@@ -76,6 +76,10 @@ function App() {
             </div>
           </div>
 
+          <div className="title span-row-2">
+            Software Developer &nbsp; | &nbsp; Philadelphia, PA
+          </div>
+
           <div className="skills-container span-row-2">
             <div className="skills-card">
               <img src={frontend} alt="frontend icon" />
