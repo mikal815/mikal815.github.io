@@ -1,8 +1,8 @@
 import React from 'react';
 import { slide as Menu } from "react-burger-menu";
-import '../Menu/Menu.css'
+import '../Menu/Menu.css';
 
-export default props => {
+export default () => {
   return (
     <Menu right>
       <a className="menu-item" href="/">
