@@ -1,0 +1,20 @@
+.details-container {
+    color: #ffffff;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.project {
+    display: flex;
+}
+
+.project img {
+    height: 17em;
+    width: 25em;
+    padding-right: 2.5em;
+}
+
+.project p {
+    color: #9aa6ab;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+}
