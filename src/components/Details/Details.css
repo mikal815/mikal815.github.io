@@ -6,11 +6,12 @@
 
 .project {
     display: flex;
+    margin-bottom: 5em;
 }
 
 .project img {
-    height: 17em;
-    width: 25em;
+    height: 15em;
+    width: auto;
     padding-right: 2.5em;
 }
 
