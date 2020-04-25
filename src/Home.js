@@ -80,7 +80,7 @@ function Home() {
                     </div>
 
                     <div className="skills-container span-row-2">
-                        <div className="skills-card">
+                        <div className="skills-card skills-card-frontend">
                             <img src={frontend} alt="frontend icon" />
                             <div className="heading">FRONT END</div>
                             <div>HTML5</div>
@@ -90,8 +90,8 @@ function Home() {
                             <div>-</div>
                             <div>-</div>
                         </div>
-                        <div className="skills-card">
-                            <img src={backend} alt="frontend icon" />
+                        <div className="skills-card skills-card-server">
+                            <img src={backend} alt="server icon" />
                             <div className="heading">SERVER</div>
                             <div>NodeJS</div>
                             <div>Express</div>
@@ -99,8 +99,8 @@ function Home() {
                             <div>Authentication/<br></br>Authorization</div>
                             <div>Payment systems</div>
                         </div>
-                        <div className="skills-card">
-                            <img src={database} alt="frontend icon" />
+                        <div className="skills-card skills-card-database">
+                            <img src={database} alt="database icon" />
                             <div className="heading">DATABASE</div>
                             <div>mySQL</div>
                             <div>MongoDB</div>
@@ -109,7 +109,7 @@ function Home() {
                             <div>-</div>
                             <div>-</div>
                         </div>
-                        <div className="skills-card">
+                        <div className="skills-card skills-card-additional">
                             <img src={additional} alt="additional icon" />
                             <div className="heading">ADDITIONAL</div>
                             <div>Unit Testing</div>
