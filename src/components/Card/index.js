@@ -3,15 +3,17 @@ import styled from 'styled-components';
 
 
 const CardStyle = styled.div`
-    /* display: grid;
+    display: grid;
     width: 90vw;
     min-height: 15vh;
     max-height: 23vh;
     margin-right: 5vw;
     margin-left: 5vw;
-    background-color: #227d5b;
+    /* background-color: #227d5b; */
     color: #ffffff;
-    padding: 10px; */
+    padding: 10px;
+    background-image: linear-gradient(to bottom right,#2fac7e, rgb(34,125,91));
+    border: solid 5px #227d5b; 
 `
 
 const Slogan = styled.div`
