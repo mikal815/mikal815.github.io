@@ -113,10 +113,10 @@ function Home() {
                             <img src={additional} alt="additional icon" />
                             <div className="heading">ADDITIONAL</div>
                             <div>Unit Testing</div>
-                            <div>End to End testing</div>
+                            <div>End to End-</div>
+                            <div>testing</div>
                             <div>Continuous-</div>
                             <div>Integration</div>
-                            <div>-</div>
                             <div>-</div>
                         </div>
                     </div>

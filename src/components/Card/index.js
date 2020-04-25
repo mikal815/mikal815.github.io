@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 
 const CardStyle = styled.div`
-    display: grid;
-    border-radius: 3px;
+    /* display: grid;
     width: 90vw;
     min-height: 15vh;
     max-height: 23vh;
@@ -12,7 +11,7 @@ const CardStyle = styled.div`
     margin-left: 5vw;
     background-color: #227d5b;
     color: #ffffff;
-    padding: 10px;
+    padding: 10px; */
 `
 
 const Slogan = styled.div`

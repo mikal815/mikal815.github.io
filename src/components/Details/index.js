@@ -24,6 +24,7 @@ export default function Details() {
         <Layout>
             <Logo />
             <Sidebar />
+            <div className="title span-row-2">Portfolio</div>
             <div className="details-container span-row-2">
                 <div className="project">
                     <img src={SurfersDepot} alt="Surfer's Depot" />
