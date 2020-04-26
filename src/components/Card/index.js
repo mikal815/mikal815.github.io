@@ -11,7 +11,6 @@ const CardStyle = styled.div`
     margin-left: 5vw;
     /* background-color: #227d5b; */
     color: #ffffff;
-    padding: 10px;
     background-image: linear-gradient(to bottom right,#2fac7e, rgb(34,125,91));
     border: solid 5px #227d5b; 
 `
