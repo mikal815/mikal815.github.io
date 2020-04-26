@@ -48,7 +48,7 @@ function Home() {
                         <CardFlip />
                     </div>
 
-                    <Link to="/details" className="view-work span-row-2">
+                    <Link to="/details" className="view-work-mobile span-row-2">
                         View Work
                     </Link>
 

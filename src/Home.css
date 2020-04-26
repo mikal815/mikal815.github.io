@@ -102,6 +102,20 @@
     font-size: 0.9em;
   }
 
+  .view-work-mobile {
+    color: #a6aeb4;
+    text-decoration: none;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    background-color: #27292b;
+    border: 2px solid #a6aeb4;
+    width: 10em;
+    height: 2.6em;
+    display: grid;
+    place-content: center;
+    /* margin: auto; */
+    font-size: 0.9em;
+  }
+
   .footer {
     display: flex;
     justify-content: space-around;
