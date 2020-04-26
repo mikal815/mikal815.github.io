@@ -11,6 +11,7 @@ import frontend from './assets/icons/frontend.svg';
 import backend from './assets/icons/backend.svg';
 import database from './assets/icons/database.svg';
 import additional from './assets/icons/additional.svg';
+import { Link } from 'react-router-dom';
 
 const MobileLayout = styled.div`
   display: grid;
@@ -26,7 +27,6 @@ const MobileLayout = styled.div`
 const TabletLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* grid-auto-rows: 1fr; */
   grid-template-rows: 1fr 1fr 1fr auto 1fr 12em 1fr;
   height: 100%;
   background-color: #27292b;
@@ -48,18 +48,18 @@ function Home() {
                         <CardFlip />
                     </div>
 
-                    <button className="view-work span-row-2">
-                        <div>View Work</div>
-                    </button>
+                    <Link to="/details" className="view-work span-row-2">
+                        View Work
+                    </Link>
 
                     <div className="span-row-2">
                         <SlideCarousel />
                     </div>
 
                     <footer className="footer span-row-2">
-                        <div>portfolio</div>
-                        <div>services</div>
-                        <div>hire me</div>
+                        <Link to="/details">portfolio</Link>
+                        <Link to="/services">services</Link>
+                        <Link to="/hire">hire me</Link>
                     </footer>
 
                 </MobileLayout>
@@ -122,17 +122,17 @@ function Home() {
                         </div>
                     </div>
 
-                    <button className="view-work span-row-2">
-                        <div>View Work</div>
-                    </button>
+                    <Link to="/details" className="view-work span-row-2">
+                        View Work
+                    </Link>
 
                     <div className="gallery span-row-2">
                         <Gallery />
                     </div>
                     <footer className="footer span-row-2">
-                        <div>portfolio</div>
-                        <div>services</div>
-                        <div>hire me</div>
+                        <a href="/details">portfolio</a>
+                        <a href="/services">services</a>
+                        <a href="/hire">hire me</a>
                     </footer>
                 </TabletLayout>
             </MediaQuery>

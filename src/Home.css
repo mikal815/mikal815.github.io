@@ -60,7 +60,8 @@
   
   /* General sidebar styles */
   .bm-menu {
-    background: #696969;
+    background-image: linear-gradient(to bottom,#696969,#696969, #696969, rgba(105, 105, 105, 0.83), rgba(105, 105, 105, 0.62),#29272b,transparent, transparent,transparent);
+    /* background: #696969; */
     font-size: 1.15em;
   }
   
@@ -88,28 +89,33 @@
   }
 
   .view-work { 
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #a6aeb4;
+    text-decoration: none;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     background-color: #27292b;
     border: 2px solid #a6aeb4;
-    font-size: 0.8rem; 
-    width: 12em;
-    height: 3em;
+    width: 10em;
+    height: 2.6em;
     display: grid;
     place-content: center;
     margin: auto;
+    font-size: 0.9em;
   }
 
   .footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     border: 5px solid #e08648;
     background-image: linear-gradient(to right,rgba(231, 162, 115, 0.75),#e7a273, #e08648);
     width: 90vw;
     height: 45px;
+  }
+
+  .footer a {
     color: #ffffff;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    text-decoration: none;
   }
   
   .skills-container {

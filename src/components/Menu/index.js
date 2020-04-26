@@ -9,7 +9,7 @@ export default () => {
         Home
             </a>
 
-      <a className="menu-item" href="/portfolio">
+      <a className="menu-item" href="/details">
         Portfolio
             </a>
 
