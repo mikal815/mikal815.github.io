@@ -143,20 +143,21 @@
   }
 
   .skills-card-frontend {
-    background-image: linear-gradient(to bottom left,#2fac7e, rgb(34,125,91),rgb(34,125,91));
+    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
+    /* background-image: linear-gradient(#2fac7e,#2fac7e, #2ea87b,#2ea87b, rgb(34,125,91),rgb(34,125,91)); */
   }
 
   .skills-card-server {
-    background-image: linear-gradient(#2fac7e, rgb(34,125,91));
+    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
    }
 
    .skills-card-database {
-    background-image: linear-gradient(#2fac7e, rgb(34,125,91));
-   }
+    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
+  }
 
    .skills-card-additional {
-    background-image: linear-gradient(to bottom right,#2fac7e, rgb(34,125,91),rgb(34,125,91));
-   }
+    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
+  }
 
   .heading {
     color: #ffffff;
