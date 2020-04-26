@@ -111,23 +111,12 @@
     justify-content: space-around;
     align-items: center;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    /* background-color: #e08648; */
-    /* background-color: #29272b; */
     border: 5px solid #e08648;
     background-image: linear-gradient(to right,#27292b,  #27292b,#e7a273,  #e08648);
-    /* background-image: linear-gradient(#27292b,#e08648,#e08648); */
     width: 90vw;
     height: 45px;
     color: #ffffff;
   }
-
-  /* .footer div {
-    background-color: #e08648;
-    height: 100%;
-    width: 8em;
-    display: grid;
-    place-content: center;
-  } */
   
   .skills-container {
     display: flex;
