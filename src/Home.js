@@ -26,7 +26,8 @@ const MobileLayout = styled.div`
 const TabletLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 1fr;
+  /* grid-auto-rows: 1fr; */
+  grid-template-rows: 1fr 1fr 1fr auto 1fr 12em 1fr;
   height: 100%;
   background-color: #27292b;
   position: fixed;
@@ -71,7 +72,7 @@ function Home() {
 
                     <div className="slogan-container span-row-2">
                         <div className="slogan-text">
-                            I actualize intuative and <br></br>engaging experiences ~
+                            I actualize intuative and<br></br>engaging experiences ~
                         </div>
                     </div>
 
@@ -87,8 +88,8 @@ function Home() {
                             <div>CSS3 | SASS</div>
                             <div>Javascript</div>
                             <div>React | Redux</div>
-                            <div>-</div>
-                            <div>-</div>
+                            <div className="hidden-dash">-</div>
+                            <div className="hidden-dash">-</div>
                         </div>
                         <div className="skills-card skills-card-server">
                             <img src={backend} alt="server icon" />
@@ -106,8 +107,8 @@ function Home() {
                             <div>MongoDB</div>
                             <div>Password-</div>
                             <div>Hashing</div>
-                            <div>-</div>
-                            <div>-</div>
+                            <div className="hidden-dash">-</div>
+                            <div className="hidden-dash">-</div>
                         </div>
                         <div className="skills-card skills-card-additional">
                             <img src={additional} alt="additional icon" />
@@ -117,7 +118,7 @@ function Home() {
                             <div>testing</div>
                             <div>Continuous-</div>
                             <div>Integration</div>
-                            <div>-</div>
+                            <div className="hidden-dash">-</div>
                         </div>
                     </div>
 
@@ -125,7 +126,7 @@ function Home() {
                         <div>View Work</div>
                     </button>
 
-                    <div className="span-row-2">
+                    <div className="gallery span-row-2">
                         <Gallery />
                     </div>
                     <footer className="footer span-row-2">

@@ -45,8 +45,6 @@
 
   .bm-burger-bars-hover {
     background: #ffffff;
-
-    /* background: white; */
   }
   
   /* Position and sizing of clickable cross button */
@@ -63,12 +61,7 @@
   /* General sidebar styles */
   .bm-menu {
     background: #696969;
-  /* padding: 2.5em 1.5em 0; */
-  font-size: 1.15em;
-
-    /* background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em; */
+    font-size: 1.15em;
   }
   
   /* Morph shape necessary with bubble or elastic */
@@ -100,10 +93,11 @@
     background-color: #27292b;
     border: 2px solid #a6aeb4;
     font-size: 0.8rem; 
-    width: 8rem;
-    height: 38px;
+    width: 12em;
+    height: 3em;
     display: grid;
     place-content: center;
+    margin: auto;
   }
 
   .footer {
@@ -112,7 +106,7 @@
     align-items: center;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     border: 5px solid #e08648;
-    background-image: linear-gradient(to right,#27292b,  #27292b,#e7a273,  #e08648);
+    background-image: linear-gradient(to right,rgba(231, 162, 115, 0.75),#e7a273, #e08648);
     width: 90vw;
     height: 45px;
     color: #ffffff;
@@ -120,7 +114,10 @@
   
   .skills-container {
     display: flex;
-    height: fit-content;
+  }
+
+  .hidden-dash {
+    color: transparent;
   }
 
   .skills-card {
@@ -128,7 +125,7 @@
    justify-items: center;
    align-items: center;
    color: #29272b;
-   font-size: 1em;
+   font-size: 0.9em;
    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
    font-weight: 400;
    line-height: 1.5;
@@ -142,7 +139,6 @@
 
   .skills-card-frontend {
     background-image: linear-gradient(#29272b, #29272b, #29272b,#2fac7e,#2fac7e, #2fac7e,rgb(34,125,91));
-    /* background-image: linear-gradient(#2fac7e,#2fac7e, #2ea87b,#2ea87b, rgb(34,125,91),rgb(34,125,91)); */
   }
 
   .skills-card-server {
@@ -160,10 +156,8 @@
   .heading {
     color: #ffffff;
     font-size: x-large;
-    /* font-weight: bold; */
     font-size: 1.3rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    /* font-weight: 400; */
     line-height: 1.33;
     letter-spacing: 0em;
     padding-bottom: 0.5rem;
@@ -172,20 +166,16 @@
 
   .slogan-container {
     display: grid;
-    justify-content: center;
-  }
-
-  .slogan-text {
+    place-items: center;
     color: #ffffff;
-    font-size: 2.5em;
-    /* font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; */
-    font-family: "Segoe UI", "Helvetica Neue", Helvetica, 'Open Sans', sans-serif;
+    font-size: 2.3em;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
   }
 
   .title {
     color: #a6aeb4;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     justify-self: center;
     align-self: center;
     margin: auto;
