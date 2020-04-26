@@ -141,20 +141,20 @@
   }
 
   .skills-card-frontend {
-    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
+    background-image: linear-gradient(#29272b, #29272b, #29272b,#2fac7e,#2fac7e, #2fac7e,rgb(34,125,91));
     /* background-image: linear-gradient(#2fac7e,#2fac7e, #2ea87b,#2ea87b, rgb(34,125,91),rgb(34,125,91)); */
   }
 
   .skills-card-server {
-    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
+    background-image: linear-gradient(#29272b, #29272b,#29272b, #2fac7e, #2fac7e, #2fac7e,rgb(34,125,91));
    }
 
    .skills-card-database {
-    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
+    background-image: linear-gradient(#29272b, #29272b, #29272b,#2fac7e,#2fac7e, #2fac7e,rgb(34,125,91));
   }
 
    .skills-card-additional {
-    background-image: linear-gradient(#29272b, #29272b, #2fac7e, rgb(34,125,91),rgb(34,125,91));
+    background-image: linear-gradient(#29272b, #29272b,#29272b, #2fac7e, #2fac7e,#2fac7e,rgb(34,125,91));
   }
 
   .heading {
@@ -178,7 +178,8 @@
   .slogan-text {
     color: #ffffff;
     font-size: 2.5em;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    /* font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif; */
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, 'Open Sans', sans-serif;
   }
 
   .title {
@@ -186,6 +187,8 @@
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 1.2em;
     justify-self: center;
+    align-self: center;
+    margin: auto;
   }
 
   .menu-item {
