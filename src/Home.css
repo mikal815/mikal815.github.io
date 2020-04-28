@@ -121,7 +121,7 @@
     justify-content: space-around;
     align-items: center;
     border: 5px solid #e08648;
-    background-image: linear-gradient(to right,rgba(231, 162, 115, 0.75),#e7a273, #e08648);
+    background-image: linear-gradient(to right,#eaad85,#e7a273, #e08648);
     width: 90vw;
     height: 45px;
   }

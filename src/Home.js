@@ -58,8 +58,8 @@ function Home() {
 
                     <footer className="footer span-row-2">
                         <Link to="/mobile/details">portfolio</Link>
-                        <Link to="/services">services</Link>
-                        <Link to="/hire">hire me</Link>
+                        <Link to="/mobile/services">services</Link>
+                        <Link to="/mobile/hire">hire me</Link>
                     </footer>
 
                 </MobileLayout>

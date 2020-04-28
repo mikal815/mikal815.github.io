@@ -45,6 +45,7 @@ export default function MobileDetails() {
                     </p>
                 </div>
                 <div className="mobile-project">
+                    <div className="project-title">Boardwalk Pier Stage</div>
                     <img src={BPS} alt="Boardwalk Pier Stage" />
                     <p>
                         This website showcases a public venue promoting a rock concert.
@@ -64,6 +65,7 @@ export default function MobileDetails() {
                     </p>
                 </div>
                 <div className="mobile-project">
+                    <div className="project-title">Icarus Travel</div>
                     <img src={Icarus} alt="Icarus" />
                     <p>
                         This website showcases a public venue promoting a rock concert.
@@ -84,6 +86,7 @@ export default function MobileDetails() {
                 </div>
 
                 <div className="mobile-project">
+                    <div className="project-title">Shape Shifter</div>
                     <img src={Shapes} alt="Shape Shifter" />
                     <p>
                         Shape Shifter is a memory game build with React. The goal of the game is to click on each shape
@@ -97,6 +100,7 @@ export default function MobileDetails() {
                     </p>
                 </div>
                 <div className="mobile-project">
+                    <div className="project-title">Music to My Ears</div>
                     <img src={MTME} alt="Music to My Ears" />
                     <p>
                         Music to My Ears is an ear training app for any aspiring musician.

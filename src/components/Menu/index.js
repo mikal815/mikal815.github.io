@@ -1,29 +1,30 @@
 import React from 'react';
 import { slide as Menu } from "react-burger-menu";
 import '../Menu/Menu.css';
+import { Link } from 'react-router-dom';
 
 export default () => {
   return (
     <Menu right>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         Home
-            </a>
+      </Link>
 
-      <a className="menu-item" href="/details">
+      <Link className="menu-item" to="/details">
         Portfolio
-            </a>
+      </Link>
 
-      <a className="menu-item" href="/services">
+      <Link className="menu-item" to="/services">
         Services
-            </a>
+      </Link>
 
-      <a className="menu-item" href="/about">
+      <Link className="menu-item" to="/about">
         About Me
-            </a>
+      </Link>
 
-      <a className="menu-item" href="/hire">
+      <Link className="menu-item" to="/hire">
         Hire Me
-            </a>
+      </Link>
     </Menu>
   );
 }
