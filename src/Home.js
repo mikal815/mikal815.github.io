@@ -20,8 +20,8 @@ const MobileLayout = styled.div`
   height: 100%;
   background-color: #27292b;
   position: fixed;
-  right: 0;
-  left: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
 `
 
 const TabletLayout = styled.div`
@@ -31,8 +31,8 @@ const TabletLayout = styled.div`
   height: 100%;
   background-color: #27292b;
   position: fixed;
-  right: 0;
-  left: 0;
+  padding-left: 5vw;
+  padding-right: 5vw;
 `
 
 function Home() {
@@ -48,7 +48,7 @@ function Home() {
                         <CardFlip />
                     </div>
 
-                    <Link to="/details" className="view-work-mobile span-row-2">
+                    <Link to="/mobile/details" className="view-work-mobile span-row-2">
                         View Work
                     </Link>
 
@@ -57,7 +57,7 @@ function Home() {
                     </div>
 
                     <footer className="footer span-row-2">
-                        <Link to="/details">portfolio</Link>
+                        <Link to="/mobile/details">portfolio</Link>
                         <Link to="/services">services</Link>
                         <Link to="/hire">hire me</Link>
                     </footer>

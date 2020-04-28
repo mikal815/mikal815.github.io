@@ -1,11 +1,9 @@
 .logo-container {  
     display: grid;
     align-content: center;
-    justify-content: left;
     height: 55px;
-}
+} 
 .logo {
     height: 50px;
     width: auto;
-    padding-left: 5vw;
-}
+} 
