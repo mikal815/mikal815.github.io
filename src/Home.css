@@ -12,15 +12,15 @@
 /* Individual item */
 
 .bm-item {
-    width: 13em;
+    width: 11em;
     text-decoration: none;
     color: #ffffff;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     height: 2.5em;
     background-color: #696969;
     margin-bottom: 1.2em;
-    padding-top: 9px;
+    padding-top: 12px;
   }
   
   /* Change color on hover */
