@@ -8,6 +8,7 @@ import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
 import Shapes from '../../assets/images/Shapes.PNG';
 import SurfersDepot from '../../assets/images/surfersdepot.PNG';
+import { Link } from 'react-router-dom';
 
 const Layout = styled.div`
   display: grid;
@@ -125,7 +126,12 @@ export default function MobileDetails() {
 
                     </p>
                 </div>
-
+                <footer className="footer span-row-2">
+                    <Link to="/">home</Link>
+                    <Link to="/mobile/details">portfolio</Link>
+                    <Link to="/mobile/services">services</Link>
+                    <Link to="/mobile/hire">hire me</Link>
+                </footer>
             </div>
         </Layout>
     )
