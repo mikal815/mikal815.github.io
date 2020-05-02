@@ -24,8 +24,10 @@
 }
 
 .mobile-title {
+    font-size: 1.8em;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #ffffff;
+    margin-top: 1em;
     margin-bottom: 2em;
 }
 
@@ -36,9 +38,50 @@
 .project-title {
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: rgb(163, 163, 163);
-    /* color: #27292b; */
     margin-bottom: 1em;
     margin-top: 1em;
     justify-self: center;
-    font-size: 1.3em;
+    font-size: 1.8em;
+}
+
+.services {
+    display: grid;
+    background-image: linear-gradient(to bottom, #27292b,rgb(163, 163, 163),rgb(163, 163, 163),rgb(130, 130, 130));
+    color: #27292b;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.services img {
+    justify-self: center;
+}
+
+.sub-section {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.sub-title {
+    justify-self: center;
+    color: rgb(163, 163, 163);
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    margin-bottom: 0.5em;
+    /* margin-top: 0.2em; */
+    padding-top: 0.5em;
+    justify-self: center;
+    font-size: 1.8em;
+    
+}
+
+.services-title {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }

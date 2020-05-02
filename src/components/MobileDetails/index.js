@@ -9,6 +9,10 @@ import MTME from '../../assets/images/mtme.PNG';
 import Shapes from '../../assets/images/Shapes.PNG';
 import SurfersDepot from '../../assets/images/surfersdepot.PNG';
 import { Link } from 'react-router-dom';
+import frontend from '../../assets/icons/frontend.svg';
+import backend from '../../assets/icons/backend.svg';
+import database from '../../assets/icons/database.svg';
+import additional from '../../assets/icons/additional.svg';
 
 const Layout = styled.div`
   display: grid;
@@ -126,6 +130,39 @@ export default function MobileDetails() {
 
                     </p>
                 </div>
+                <div className="services-title">Services</div>
+
+                <div className="services">
+                    <div className="sub-title">Frontend</div>
+                    <img src={frontend} alt="frontend" />
+                    <div className="sub-section">
+                        HTML5, CSS3, Javascript(ES6), React, Bootstrap, Responsive Design, jQuery
+                    </div>
+                </div>
+                <div className="services">
+                    <div className="sub-title">Server</div>
+                    <img src={backend} alt="server" />
+                    <div className="sub-section">
+                        Node.js, Express, Redux, Rest API systems, Payment systems,
+                        MySQL, MongoDB, Password hashing, Login systems, Authentication
+                </div>
+                </div>
+                <div className="services">
+                    <div className="sub-title">Database</div>
+                    <img src={database} alt="database" />
+                    <div className="sub-section">
+                        MySQL, MongoDB, Password hashing, Login systems, Authentication
+                </div>
+                </div>
+                <div className="services">
+                    <div className="sub-title">Additional</div>
+                    <img src={additional} alt="additional" />
+                    <div className="sub-section">
+                        Data driven web development, Big O notation, Single page apps, Mocha/Chai unit testing, Implementing
+                        middleware, VS Code, Continuous Integration
+                </div>
+                </div>
+
                 <footer className="footer span-row-2">
                     <Link to="/">home</Link>
                     <Link to="/mobile/details">portfolio</Link>

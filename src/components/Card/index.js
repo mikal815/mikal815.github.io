@@ -12,7 +12,6 @@ const CardStyle = styled.div`
     color: #ffffff;
     background-image: linear-gradient(to bottom right,#2fac7e, rgb(34,125,91));
     padding: 5px;
-    /* border: solid 5px transparent;  */
 `
 
 const Slogan = styled.div`
