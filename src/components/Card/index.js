@@ -9,10 +9,9 @@ const CardStyle = styled.div`
     max-height: 23vh;
     margin-right: 5vw;
     margin-left: 5vw;
-    /* background-color: #227d5b; */
     color: #ffffff;
     background-image: linear-gradient(to bottom right,#2fac7e, rgb(34,125,91));
-    border: solid 5px #227d5b; 
+    /* border: solid 5px transparent;  */
 `
 
 const Slogan = styled.div`
