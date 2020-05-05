@@ -8,11 +8,13 @@ import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
 import Shapes from '../../assets/images/Shapes.PNG';
 import SurfersDepot from '../../assets/images/surfersdepot.PNG';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import frontend from '../../assets/icons/frontend.svg';
 import backend from '../../assets/icons/backend.svg';
 import database from '../../assets/icons/database.svg';
 import additional from '../../assets/icons/additional.svg';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Layout = styled.div`
   display: grid;
@@ -27,7 +29,7 @@ const Layout = styled.div`
 
 export default function MobileDetails() {
     return (
-        <Layout>
+        <Layout id="portfolio">
             <Logo />
             <Sidebar />
             <div className="mobile-title span-row-2">Portfolio</div>
@@ -166,9 +168,9 @@ export default function MobileDetails() {
 
                 <footer className="footer span-row-2">
                     <Link to="/">home</Link>
-                    <Link to="/mobile/details">portfolio</Link>
-                    <Link to="/mobile/services">services</Link>
-                    <Link to="/mobile/hire">hire me</Link>
+                    <Link to="/mobile/details/#portfolio">portfolio</Link>
+                    <Link to="/mobile/details/#services">services</Link>
+                    <Link to="/mobile/details/#hire">hire me</Link>
                 </footer>
             </div>
         </Layout>
