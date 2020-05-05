@@ -130,7 +130,8 @@ export default function MobileDetails() {
 
                     </p>
                 </div>
-                <div className="services-title">Services</div>
+
+                <div className="services-title" id="services">Services</div>
 
                 <div className="services">
                     <div className="sub-title">Frontend</div>
@@ -145,14 +146,14 @@ export default function MobileDetails() {
                     <div className="sub-section">
                         Node.js, Express, Redux, Rest API systems, Payment systems,
                         MySQL, MongoDB, Password hashing, Login systems, Authentication
-                </div>
+                        </div>
                 </div>
                 <div className="services">
                     <div className="sub-title">Database</div>
                     <img src={database} alt="database" />
                     <div className="sub-section">
                         MySQL, MongoDB, Password hashing, Login systems, Authentication
-                </div>
+                        </div>
                 </div>
                 <div className="services">
                     <div className="sub-title">Additional</div>
@@ -160,7 +161,7 @@ export default function MobileDetails() {
                     <div className="sub-section">
                         Data driven web development, Big O notation, Single page apps, Mocha/Chai unit testing, Implementing
                         middleware, VS Code, Continuous Integration
-                </div>
+                    </div>
                 </div>
 
                 <footer className="footer span-row-2">

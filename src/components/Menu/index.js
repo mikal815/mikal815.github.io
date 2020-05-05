@@ -1,10 +1,11 @@
 import React from 'react';
 import { slide as Menu } from "react-burger-menu";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import MediaQuery from 'react-responsive';
-
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default () => {
+
   return (
     <>
       <MediaQuery maxDeviceWidth={500}>
@@ -13,23 +14,24 @@ export default () => {
             Home
           </Link>
 
-          <Link to="/mobile/details">
+          <Link to="/mobile/details/#portfolio">
             Portfolio
           </Link>
 
-          <Link to="/mobile/services">
+          <Link to="/mobile/details/#services">
             Services
           </Link>
 
-          <Link to="/mobile/about">
+          <Link to="/mobile/details/#about">
             About Me
           </Link>
 
-          <Link to="/mobile/hire">
+          <Link to="/mobile/details/#hire">
             Hire Me
           </Link>
         </Menu>
       </MediaQuery>
+
       <MediaQuery minDeviceWidth={500}>
         <Menu right>
           <Link to="/">

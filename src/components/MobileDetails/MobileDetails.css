@@ -58,11 +58,15 @@
 
 .services img {
     justify-self: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .sub-section {
     padding-bottom: 1em;
     padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .sub-title {
@@ -71,7 +75,7 @@
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     margin-bottom: 0.5em;
     /* margin-top: 0.2em; */
-    padding-top: 0.5em;
+    padding-top: 1em;
     justify-self: center;
     font-size: 1.8em;
     
