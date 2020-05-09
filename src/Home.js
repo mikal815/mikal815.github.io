@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import '../src/Home.css';
 import Logo from './components/Logo';
-import Sidebar from './components/Menu';
+import MenuMobile from './components/MenuMobile';
+import Menu from './components/Menu';
 import MediaQuery from 'react-responsive';
 import SlideCarousel from './components/SlideCarousel';
 import CardFlip from './components/CardFlip';
@@ -11,7 +12,8 @@ import frontend from './assets/icons/frontend.svg';
 import backend from './assets/icons/backend.svg';
 import database from './assets/icons/database.svg';
 import additional from './assets/icons/additional.svg';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const MobileLayout = styled.div`
   display: grid;
@@ -42,7 +44,7 @@ function Home() {
             <MediaQuery maxDeviceWidth={500}>
                 <MobileLayout>
                     <Logo />
-                    <Sidebar />
+                    <MenuMobile />
 
                     <div className="span-row-2">
                         <CardFlip />
@@ -57,9 +59,9 @@ function Home() {
                     </div>
 
                     <footer className="footer span-row-2">
-                        <Link to="/mobile/details">portfolio</Link>
-                        <Link to="/mobile/services">services</Link>
-                        <Link to="/mobile/hire">hire me</Link>
+                        <Link smooth to="/mobile/details/#portfolio">portfolio</Link>
+                        <Link smooth to="/mobile/details/#services">services</Link>
+                        <Link smooth to="/mobile/details/#hire">hire me</Link>
                     </footer>
 
                 </MobileLayout>
@@ -68,7 +70,7 @@ function Home() {
             <MediaQuery minDeviceWidth={500}>
                 <TabletLayout>
                     <Logo />
-                    <Sidebar />
+                    <Menu />
 
                     <div className="slogan-container span-row-2">
                         <div className="slogan-text">

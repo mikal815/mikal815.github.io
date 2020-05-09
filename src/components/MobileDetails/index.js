@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Logo from '../Logo';
-import Sidebar from '../Menu';
+import MenuMobile from '../MenuMobile';
 import '../MobileDetails/MobileDetails.css';
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
@@ -31,7 +31,7 @@ export default function MobileDetails() {
     return (
         <Layout id="portfolio">
             <Logo />
-            <Sidebar />
+            <MenuMobile />
             <div className="mobile-title span-row-2">Portfolio</div>
             <div className="mobile-details-container span-row-2">
                 <div className="mobile-project">
@@ -167,10 +167,10 @@ export default function MobileDetails() {
                 </div>
 
                 <footer className="footer span-row-2">
-                    <Link to="/">home</Link>
-                    <Link to="/mobile/details/#portfolio">portfolio</Link>
-                    <Link to="/mobile/details/#services">services</Link>
-                    <Link to="/mobile/details/#hire">hire me</Link>
+                    <Link smooth to="/">home</Link>
+                    <Link smooth to="/mobile/details/#portfolio">portfolio</Link>
+                    <Link smooth to="/mobile/details/#services">services</Link>
+                    <Link smooth to="/mobile/details/#hire">hire me</Link>
                 </footer>
             </div>
         </Layout>

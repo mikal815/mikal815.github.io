@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import Logo from '../Logo';
-import Sidebar from '../Menu';
+import Menu from '../Menu';
 import '../Details/Details.css';
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
@@ -21,9 +21,9 @@ const Layout = styled.div`
 
 export default function Details() {
     return (
-        <Layout>
+        <Layout id="portfolio">
             <Logo />
-            <Sidebar />
+            <Menu />
             <div className="title span-row-2">Portfolio</div>
             <div className="details-container span-row-2">
                 <div className="project">
@@ -118,6 +118,9 @@ export default function Details() {
                         Passport.js.
 
                     </p>
+                </div>
+                <div id="services">
+                    Services
                 </div>
 
             </div>
