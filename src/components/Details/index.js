@@ -10,13 +10,14 @@ import Shapes from '../../assets/images/Shapes.PNG';
 import SurfersDepot from '../../assets/images/surfersdepot.PNG';
 
 const Layout = styled.div`
-    background-color: #27292b;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5em auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
     height: 100%;
-    right: 0;
-    left: 0;
+    background-color: #27292b;
+    position: relative;
+    padding-left: 5vw;
+    padding-right: 5vw;
 `
 
 export default function Details() {

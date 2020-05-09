@@ -13,19 +13,19 @@ export default () => {
                     Home
                 </Link>
 
-                <Link to="/details/#portfolio">
+                <Link smooth to="/details/#portfolio">
                     Portfolio
                 </Link>
 
-                <Link to="/details/#services">
+                <Link smooth to="/details/#services">
                     Services
                 </Link>
 
-                <Link to="/details/#about">
+                <Link smooth to="/details/#about">
                     About Me
                 </Link>
 
-                <Link to="/details/#hire">
+                <Link smooth to="/details/#hire">
                     Hire Me
                 </Link>
             </Menu>

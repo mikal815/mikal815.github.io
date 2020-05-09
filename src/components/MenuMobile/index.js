@@ -9,7 +9,7 @@ export default () => {
   return (
     <MediaQuery maxDeviceWidth={500}>
       <Menu right>
-        <Link smooth to="/">
+        <Link to="/">
           Home
           </Link>
 
