@@ -132,9 +132,9 @@ function Home() {
                         <Gallery />
                     </div>
                     <footer className="footer span-row-2">
-                        <Link to="/details">portfolio</Link>
-                        <Link to="/services">services</Link>
-                        <Link to="/hire">hire me</Link>
+                        <Link smooth to="/details/#portfolio">portfolio</Link>
+                        <Link smooth to="/details/#services">services</Link>
+                        <Link smooth to="/details/#hire">hire me</Link>
                     </footer>
                 </TabletLayout>
             </MediaQuery>
