@@ -34,7 +34,7 @@ export default function Details() {
             <div className="details-container span-row-2">
                 <div className="project">
                     <img src={SurfersDepot} alt="Surfer's Depot" />
-                    <p>
+                    <div className="caption">
                         <div className="inner-title">Surfer's Depot</div>
 
                         Surfer's Depot is a full stack e-commerce web application. Front-end technologies used:
@@ -48,11 +48,11 @@ export default function Details() {
                         Surfer's Depot also has an admin view which allows the administrator to add new products onto
                         the
                         site. The user must meet the proper authentication to access the admin area.
-                    </p>
+                    </div>
                 </div>
                 <div className="project">
                     <img src={BPS} alt="Boardwalk Pier Stage" />
-                    <p>
+                    <div className="caption">
                         <div className="inner-title">Boardwalk Pier Stage</div>
 
                         This website showcases a public venue promoting a rock concert.
@@ -69,11 +69,11 @@ export default function Details() {
                         for many of the animations such as the zoom effect used on the second section of the page.
                         A reusable button component is used to minimize code and complexity. An iframe shows the venue's
                         location on google maps.
-                    </p>
+                    </div>
                 </div>
                 <div className="project">
                     <img src={Icarus} alt="Icarus" />
-                    <p>
+                    <div className="caption">
                         <div className="inner-title">Icarus Travel</div>
 
                         This website showcases a public venue promoting a rock concert.
@@ -90,12 +90,12 @@ export default function Details() {
                         for many of the animations such as the zoom effect used on the second section of the page.
                         A reusable button component is used to minimize code and complexity. An iframe shows the venue's
                         location on google maps.
-                    </p>
+                    </div>
                 </div>
 
                 <div className="project">
                     <img src={Shapes} alt="Shape Shifter" />
-                    <p>
+                    <div className="caption">
                         <div className="inner-title">Shape Shifter</div>
 
                         Shape Shifter is a memory game build with React. The goal of the game is to click on each shape
@@ -106,11 +106,11 @@ export default function Details() {
                         reaches 12 you win.
                         Click a shape you've already clicked and the score is reset to zero and a new game begins. A top
                         score indicator helps you gauge your progress.
-                    </p>
+                    </div>
                 </div>
                 <div className="project">
                     <img src={MTME} alt="Music to My Ears" />
-                    <p>
+                    <div className="caption">
                         <div className="inner-title">Music to My Ears</div>
 
                         Music to My Ears is an ear training app for any aspiring musician.
@@ -133,37 +133,37 @@ export default function Details() {
                         and MongoDB (To save the scores) on the back-end. This app also features a login system using
                         Passport.js.
 
-                    </p>
+                    </div>
                 </div>
 
                 <div className="services-title" id="services">Services</div>
-                <div className="services-container">
+                <div className="services-container span-row-2">
                     <div className="services-item">
-                        <div className="sub-title">Frontend</div>
+                        <div className="services-inner-title">Frontend</div>
                         <img src={frontend} alt="frontend" />
-                        <div className="sub-section">
+                        <div className="services-sub-section">
                             HTML5, CSS3, Javascript(ES6), React, Bootstrap, Responsive Design, jQuery
                     </div>
                     </div>
                     <div className="services-item">
-                        <div className="sub-title">Server</div>
+                        <div className="services-inner-title">Server</div>
                         <img src={backend} alt="server" />
-                        <div className="sub-section">
+                        <div className="services-sub-section">
                             Node.js, Express, Redux, Rest API systems, Payment systems,
                             MySQL, MongoDB, Password hashing, Login systems, Authentication
                         </div>
                     </div>
                     <div className="services-item">
-                        <div className="sub-title">Database</div>
+                        <div className="services-inner-title">Database</div>
                         <img src={database} alt="database" />
-                        <div className="sub-section">
+                        <div className="services-sub-section">
                             MySQL, MongoDB, Password hashing, Login systems, Authentication
                         </div>
                     </div>
                     <div className="services-item">
-                        <div className="sub-title">Additional</div>
+                        <div className="services-inner-title">Additional</div>
                         <img src={additional} alt="additional" />
-                        <div className="sub-section">
+                        <div className="services-sub-section">
                             Data driven web development, Big O notation, Single page apps, Mocha/Chai unit testing, Implementing
                             middleware, VS Code, Continuous Integration
                     </div>

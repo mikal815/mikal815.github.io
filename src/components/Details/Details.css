@@ -15,7 +15,7 @@
     padding-right: 2.5em;
 }
 
-.project p {
+.project .caption {
     color: #27292b;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     /* background-image: linear-gradient(to bottom right,#bdbdbd, rgb(163, 163, 163),rgb(130, 130, 130),#8a8a8a); */
@@ -37,7 +37,7 @@
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 1.8em;
     padding-bottom: 1em;
-    margin-top: -0.6em;
+    /* margin-top: -0.6em; */
     text-align: center;
 }
 
@@ -50,13 +50,35 @@
     margin-bottom: 2em;
     padding-bottom: 2em;
     justify-items: center;
+    align-items: center;
     width: 15em;
+    /* height: 30em; */
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 .services-container {
     display: flex;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    justify-content: space-around;
+    place-content: center;
 }
 
+.services-inner-title {
+    color: #666666;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 1.8em;
+    padding-bottom: 1em;
+    /* margin-top: -0.6em; */
+    text-align: center;
+}
+
+.services-sub-section {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 11em;
+}
+
+.services-item img {
+    padding-bottom: 2em;
+}
