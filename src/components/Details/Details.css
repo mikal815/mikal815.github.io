@@ -18,8 +18,7 @@
 .project .caption {
     color: #27292b;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    /* background-image: linear-gradient(to bottom right,#bdbdbd, rgb(163, 163, 163),rgb(130, 130, 130),#8a8a8a); */
-    background-image: linear-gradient(to bottom, rgb(163, 163, 163),rgb(163, 163, 163),rgb(130, 130, 130));
+    background-color: rgb(163, 163, 163);
     font-size: 1em;
     padding: 3em;
 }
