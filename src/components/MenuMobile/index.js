@@ -4,31 +4,56 @@ import { slide as Menu } from "react-burger-menu";
 import { HashLink as Link } from 'react-router-hash-link';
 import MediaQuery from 'react-responsive';
 
-export default () => {
 
-  return (
-    <MediaQuery maxDeviceWidth={500}>
-      <Menu right>
-        <Link to="/">
-          Home
-          </Link>
+export default class TheMenu extends React.Component {
 
-        <Link smooth to="/mobile/details/#portfolio">
-          Portfolio
-          </Link>
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuOpen: false
+    }
+  }
 
-        <Link smooth to="/mobile/details/#services">
-          Services
-          </Link>
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen })
+  }
 
-        <Link smooth to="/mobile/details/#about">
-          About Me
-          </Link>
+  closeMenu() {
+    this.setState({ menuOpen: false })
+  }
 
-        <Link smooth to="/mobile/details/#hire">
-          Hire Me
-          </Link>
-      </Menu>
-    </MediaQuery>
-  );
+
+
+  render() {
+    return (
+      <MediaQuery maxDeviceWidth={500} >
+        <Menu
+          right
+          isOpen={this.state.menuOpen}
+          onStateChange={(state) => this.handleStateChange(state)}
+        >
+          <Link onClick={() => this.closeMenu()} to="/">
+            Home
+                </Link>
+
+          <Link onClick={() => this.closeMenu()} smooth to="/mobile/details/#portfolio">
+            Portfolio
+                </Link>
+
+          <Link onClick={() => this.closeMenu()} smooth to="/mobile/details/#services">
+            Services
+                </Link>
+
+          <Link onClick={() => this.closeMenu()} smooth to="/mobile/details/#about">
+            About Me
+                </Link>
+
+          <Link onClick={() => this.closeMenu()} smooth to="/mobile/details/#hire">
+            Hire Me
+                </Link>
+        </Menu>
+      </MediaQuery>
+    )
+  }
 }
+

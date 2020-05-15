@@ -4,31 +4,55 @@ import { slide as Menu } from "react-burger-menu";
 import { HashLink as Link } from 'react-router-hash-link';
 import MediaQuery from 'react-responsive';
 
-export default () => {
+export default class TheMenu extends React.Component {
 
-    return (
-        <MediaQuery minDeviceWidth={500}>
-            <Menu right>
-                <Link to="/">
-                    Home
+    constructor(props) {
+        super(props)
+        this.state = {
+            menuOpen: false
+        }
+    }
+
+    handleStateChange(state) {
+        this.setState({ menuOpen: state.isOpen })
+    }
+
+    closeMenu() {
+        this.setState({ menuOpen: false })
+    }
+
+
+
+    render() {
+        return (
+            <MediaQuery minDeviceWidth={500} >
+                <Menu
+                    right
+                    isOpen={this.state.menuOpen}
+                    onStateChange={(state) => this.handleStateChange(state)}
+                >
+                    <Link onClick={() => this.closeMenu()} to="/">
+                        Home
                 </Link>
 
-                <Link smooth to="/details/#portfolio">
-                    Portfolio
+                    <Link onClick={() => this.closeMenu()} smooth to="/details/#portfolio">
+                        Portfolio
                 </Link>
 
-                <Link smooth to="/details/#services">
-                    Services
+                    <Link onClick={() => this.closeMenu()} smooth to="/details/#services">
+                        Services
                 </Link>
 
-                <Link smooth to="/details/#about">
-                    About Me
+                    <Link onClick={() => this.closeMenu()} smooth to="/details/#about">
+                        About Me
                 </Link>
 
-                <Link smooth to="/details/#hire">
-                    Hire Me
+                    <Link onClick={() => this.closeMenu()} smooth to="/details/#hire">
+                        Hire Me
                 </Link>
-            </Menu>
-        </MediaQuery>
-    );
+                </Menu>
+            </MediaQuery>
+        )
+    }
 }
+
