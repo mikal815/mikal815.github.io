@@ -16,7 +16,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const Layout = styled.div`
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-auto-columns: 1fr;
     grid-template-rows: auto;
     height: 100%;
     background-color: #27292b;
@@ -31,12 +31,11 @@ export default function Details() {
             <Logo />
             <Menu />
             <div className="main-title span-row-2">Portfolio</div>
-            <div className="details-container span-row-2">
-                <div className="project">
-                    <img src={SurfersDepot} alt="Surfer's Depot" />
-                    <div className="caption">
-                        <div className="inner-title">Surfer's Depot</div>
 
+            <div className="project">
+                <img className="image" src={SurfersDepot} alt="Surfer's Depot" />
+                <div className="caption">
+                    <div className="inner-title">Surfer's Depot</div>
                         Surfer's Depot is a full stack e-commerce web application. Front-end technologies used:
                         React, Material-UI, Bootstrap, HTML5, CSS3.
                         Back-end technologies used: MongoDB, Node.js, Redux, and Express.
@@ -49,12 +48,12 @@ export default function Details() {
                         the
                         site. The user must meet the proper authentication to access the admin area.
                     </div>
-                </div>
-                <div className="project">
-                    <img src={BPS} alt="Boardwalk Pier Stage" />
-                    <div className="caption">
-                        <div className="inner-title">Boardwalk Pier Stage</div>
+            </div>
 
+            <div className="project">
+                <img src={BPS} alt="Boardwalk Pier Stage" />
+                <div className="caption">
+                    <div className="inner-title">Boardwalk Pier Stage</div>
                         This website showcases a public venue promoting a rock concert.
                         This site was built with React and features a countdown clock which display the amount of
                         days, hours, minutes and seconds until the event.
@@ -70,12 +69,12 @@ export default function Details() {
                         A reusable button component is used to minimize code and complexity. An iframe shows the venue's
                         location on google maps.
                     </div>
-                </div>
-                <div className="project">
-                    <img src={Icarus} alt="Icarus" />
-                    <div className="caption">
-                        <div className="inner-title">Icarus Travel</div>
+            </div>
 
+            <div className="project">
+                <img src={Icarus} alt="Icarus" />
+                <div className="caption">
+                    <div className="inner-title">Icarus Travel</div>
                         This website showcases a public venue promoting a rock concert.
                         This site was built with React and features a countdown clock which display the amount of
                         days, hours, minutes and seconds until the event.
@@ -91,13 +90,12 @@ export default function Details() {
                         A reusable button component is used to minimize code and complexity. An iframe shows the venue's
                         location on google maps.
                     </div>
-                </div>
+            </div>
 
-                <div className="project">
-                    <img src={Shapes} alt="Shape Shifter" />
-                    <div className="caption">
-                        <div className="inner-title">Shape Shifter</div>
-
+            <div className="project">
+                <img src={Shapes} alt="Shape Shifter" />
+                <div className="caption">
+                    <div className="inner-title">Shape Shifter</div>
                         Shape Shifter is a memory game build with React. The goal of the game is to click on each shape
                         without
                         clicking on the same shape twice. This sounds easy at first however the images are randomly
@@ -107,12 +105,12 @@ export default function Details() {
                         Click a shape you've already clicked and the score is reset to zero and a new game begins. A top
                         score indicator helps you gauge your progress.
                     </div>
-                </div>
-                <div className="project">
-                    <img src={MTME} alt="Music to My Ears" />
-                    <div className="caption">
-                        <div className="inner-title">Music to My Ears</div>
+            </div>
 
+            <div className="project">
+                <img src={MTME} alt="Music to My Ears" />
+                <div className="caption">
+                    <div className="inner-title">Music to My Ears</div>
                         Music to My Ears is an ear training app for any aspiring musician.
                         To really benefit from the app the user will want to understand basic music theory
                         and the 12 notes used in music. The app uses a piano as the interface however
@@ -134,50 +132,48 @@ export default function Details() {
                         Passport.js.
 
                     </div>
-                </div>
-
-                <div className="services-title" id="services">Services</div>
-                <div className="services-container span-row-2">
-                    <div className="services-item">
-                        <div className="services-inner-title">Frontend</div>
-                        <img src={frontend} alt="frontend" />
-                        <div className="services-sub-section">
-                            HTML5, CSS3, Javascript(ES6), React, Bootstrap, Responsive Design, jQuery
-                    </div>
-                    </div>
-                    <div className="services-item">
-                        <div className="services-inner-title">Server</div>
-                        <img src={backend} alt="server" />
-                        <div className="services-sub-section">
-                            Node.js, Express, Redux, Rest API systems, Payment systems,
-                            MySQL, MongoDB, Password hashing, Login systems, Authentication
-                        </div>
-                    </div>
-                    <div className="services-item">
-                        <div className="services-inner-title">Database</div>
-                        <img src={database} alt="database" />
-                        <div className="services-sub-section">
-                            MySQL, MongoDB, Password hashing, Login systems, Authentication
-                        </div>
-                    </div>
-                    <div className="services-item">
-                        <div className="services-inner-title">Additional</div>
-                        <img src={additional} alt="additional" />
-                        <div className="services-sub-section">
-                            Data driven web development, Big O notation, Single page apps, Mocha/Chai unit testing, Implementing
-                            middleware, VS Code, Continuous Integration
-                    </div>
-                    </div>
-                </div>
-
-                <footer className="footer span-row-2">
-                    <Link smooth to="/">home</Link>
-                    <Link smooth to="/details/#portfolio">portfolio</Link>
-                    <Link smooth to="/details/#services">services</Link>
-                    <Link smooth to="/details/#hire">hire me</Link>
-                </footer>
-
             </div>
+
+            <div className="services-title span-row-2" id="services">Services</div>
+            <div className="services-container span-row-2">
+                <div className="services-item">
+                    <div className="services-inner-title">Frontend</div>
+                    <img src={frontend} alt="frontend" />
+                    <div className="services-sub-section">
+                        HTML5, CSS3, Javascript(ES6), React, Bootstrap, Responsive Design, jQuery
+                    </div>
+                </div>
+                <div className="services-item">
+                    <div className="services-inner-title">Server</div>
+                    <img src={backend} alt="server" />
+                    <div className="services-sub-section">
+                        Node.js, Express, Redux, Rest API systems, Payment systems,
+                        MySQL, MongoDB, Password hashing, Login systems, Authentication
+                        </div>
+                </div>
+                <div className="services-item">
+                    <div className="services-inner-title">Database</div>
+                    <img src={database} alt="database" />
+                    <div className="services-sub-section">
+                        MySQL, MongoDB, Password hashing, Login systems, Authentication
+                        </div>
+                </div>
+                <div className="services-item">
+                    <div className="services-inner-title">Additional</div>
+                    <img src={additional} alt="additional" />
+                    <div className="services-sub-section">
+                        Data driven web development, Big O notation, Single page apps, Mocha/Chai unit testing, Implementing
+                        middleware, VS Code, Continuous Integration
+                    </div>
+                </div>
+            </div>
+
+            <footer className="footer span-row-2">
+                <Link smooth to="/">home</Link>
+                <Link smooth to="/details/#portfolio">portfolio</Link>
+                <Link smooth to="/details/#services">services</Link>
+                <Link smooth to="/details/#hire">hire me</Link>
+            </footer>
         </Layout>
     )
 }

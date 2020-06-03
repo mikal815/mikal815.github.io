@@ -3,16 +3,13 @@
 }
 
 .project {
-    display: flex;
+    display: grid;
     margin-bottom: 5em;
-    margin-left: 12vw;
-    margin-right: 12vw;
+    justify-items: center;
 }
 
 .project img {
     height: 15em;
-    width: auto;
-    padding-right: 2.5em;
 }
 
 .project .caption {
