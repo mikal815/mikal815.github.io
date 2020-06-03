@@ -133,7 +133,7 @@ function Home() {
                     </div>
                     <footer className="footer span-row-2">
                         <Link smooth to="/details/#portfolio">portfolio</Link>
-                        <Link smooth to="/details/#services">services</Link>
+                        <Link smooth to="/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>services</Link>
                         <Link smooth to="/details/#hire">hire me</Link>
                     </footer>
                 </TabletLayout>
