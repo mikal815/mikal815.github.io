@@ -29,7 +29,7 @@ const MobileLayout = styled.div`
 const TabletLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr auto 1fr 12em 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 15em 1fr;
   height: 100%;
   background-color: #27292b;
   position: fixed;
@@ -123,10 +123,6 @@ function Home() {
                             <div className="hidden-dash">-</div>
                         </div>
                     </div>
-
-                    <Link to="/details" className="view-work span-row-2">
-                        View Work
-                    </Link>
 
                     <div className="gallery span-row-2">
                         <Gallery />

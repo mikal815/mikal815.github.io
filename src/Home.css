@@ -121,7 +121,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 5px solid transparent; */
     background-image: linear-gradient(to right,#eaad85,#e7a273, #e08648);
     width: 90vw;
     height: 45px;
@@ -151,7 +150,7 @@
    font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.00938em;
-   border: solid 3px #227d5b; 
+   border: solid 2px #227d5b; 
    width: 10rem;
    margin-right: 0.5rem;
    margin-left: 0.5rem;
