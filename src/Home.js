@@ -29,7 +29,7 @@ const MobileLayout = styled.div`
 const TabletLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 15em 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 14em auto;
   height: 100%;
   background-color: #27292b;
   position: fixed;
