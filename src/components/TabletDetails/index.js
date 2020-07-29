@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Logo from '../Logo';
 import Menu from '../Menu';
-import '../Details/Details.css';
+import '../TabletDetails/TabletDetails.css';
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
@@ -172,9 +172,9 @@ export default function Details() {
 
             <footer className="footer span-row-2">
                 <Link smooth to="/">home</Link>
-                <Link smooth to="/details/#portfolio">portfolio</Link>
-                <Link smooth to="/details/#services">services</Link>
-                <Link smooth to="/details/#hire">hire me</Link>
+                <Link smooth to="tablet/details/#portfolio">portfolio</Link>
+                <Link smooth to="tablet/details/#services">services</Link>
+                <Link smooth to="tablet/details/#hire">hire me</Link>
             </footer>
         </Layout>
     )
