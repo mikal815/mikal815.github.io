@@ -40,12 +40,11 @@
     background-image: linear-gradient(to bottom, #27292b,#27292b, rgb(163, 163, 163),rgb(163, 163, 163),rgb(130, 130, 130));
     color: #27292b;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-bottom: 2em;
     padding-bottom: 2em;
     justify-items: center;
     align-items: center;
-    width: 10em;
     margin-right: 1em;
     margin-left: 1em;
 }
@@ -53,7 +52,6 @@
 .services-container-tablet {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 0;
 }
 
 .services-inner-title-tablet {
