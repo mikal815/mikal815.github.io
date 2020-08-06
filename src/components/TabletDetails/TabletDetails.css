@@ -1,25 +1,24 @@
-.project {
+.project-tablet {
     display: grid;
-    margin-bottom: 5em;
+    margin-bottom: 9em;
     justify-items: center;
 }
 
-.project img {
+.project-tablet img {
     height: 15em;
 }
 
-.caption {
+.caption-tablet {
     color: rgb(163, 163, 163);
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     background-color:#27292b;
-    background-color:red;
-    font-size: 1em;
+    font-size: 0.8em;
     padding-right: 3em;
     padding-left: 3em;
     height: 16em;
 }
 
-.main-title {
+.main-title-tablet {
     font-size: 1.8em;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #ffffff;
@@ -27,7 +26,7 @@
     margin-bottom: 2em;
 }
 
-.inner-title {
+.inner-title-tablet {
     color: #666666;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 1.8em;
@@ -36,37 +35,36 @@
     text-align: center;
 }
 
-.services-item {
+.services-item-tablet {
     display: grid;
     background-image: linear-gradient(to bottom, #27292b,#27292b, rgb(163, 163, 163),rgb(163, 163, 163),rgb(130, 130, 130));
     color: #27292b;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-bottom: 2em;
     padding-bottom: 2em;
     justify-items: center;
     align-items: center;
-    width: 15em;
-    /* height: 30em; */
+    width: 10em;
     margin-right: 1em;
     margin-left: 1em;
 }
 
-.services-container {
-    display: flex;
-    place-content: center;
+.services-container-tablet {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0;
 }
 
-.services-inner-title {
+.services-inner-title-tablet {
     color: #666666;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 1.8em;
     padding-bottom: 1em;
-    /* margin-top: -0.6em; */
     text-align: center;
 }
 
-.services-sub-section {
+.services-sub-section-tablet {
     padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 2em;
@@ -74,6 +72,14 @@
     height: 11em;
 }
 
-.services-item img {
+.services-item-tablet img {
     padding-bottom: 2em;
+}
+
+.services-title-tablet {
+    font-size: 1.8em;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: #ffffff;
+    margin-top: 150px;
+    margin-bottom: 1em;
 }
