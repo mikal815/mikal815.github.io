@@ -35,7 +35,7 @@ const Tag = styled.div`
 export default function Card() {
     return (
         <CardStyle>
-            <Slogan>I actualize intuative and engaging experiences ~</Slogan>
+            <Slogan>Actualizing intuative and engaging experiences ~</Slogan>
             <Tag>Software Developer<br></br>Philadelphia, PA</Tag>
         </CardStyle>
     )

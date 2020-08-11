@@ -86,7 +86,7 @@ function Home() {
 
                     <div className="slogan-container span-row-2">
                         <div className="slogan-text">
-                            I actualize intuative and<br></br>engaging experiences ~
+                            Actualizing intuitive and engaging experiences ~
                         </div>
                     </div>
 
@@ -155,7 +155,7 @@ function Home() {
 
                     <div className="slogan-container span-row-2">
                         <div className="slogan-text">
-                            I actualize intuative and<br></br>engaging experiences ~
+                            Actualizing intuitive and engaging experiences ~
                         </div>
                     </div>
 
