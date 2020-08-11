@@ -72,7 +72,7 @@ function Home() {
 
                     <footer className="footer span-row-2">
                         <Link smooth to="/mobile/details/#portfolio">portfolio</Link>
-                        <Link smooth to="/mobile/details/#services">services</Link>
+                        <Link smooth to="/mobile/details/#services">skills</Link>
                         <Link smooth to="/mobile/details/#hire">hire me</Link>
                     </footer>
 
@@ -141,7 +141,7 @@ function Home() {
                     </div>
                     <footer className="footer span-row-2">
                         <Link smooth to="/tablet/details/#portfolio">portfolio</Link>
-                        <Link smooth to="/tablet/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>services</Link>
+                        <Link smooth to="/tablet/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>skills</Link>
                         <Link smooth to="/tablet/details/#hire">hire me</Link>
                     </footer>
                 </TabletLayout>
@@ -210,7 +210,7 @@ function Home() {
                     </div>
                     <footer className="footer span-row-2">
                         <Link smooth to="/details/#portfolio">portfolio</Link>
-                        <Link smooth to="/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>services</Link>
+                        <Link smooth to="/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>skills</Link>
                         <Link smooth to="/details/#hire">hire me</Link>
                     </footer>
                 </LaptopLayout>

@@ -133,7 +133,7 @@ export default function MobileDetails() {
                     </p>
                 </div>
 
-                <div className="services-title" id="services">Services</div>
+                <div className="services-title" id="services">Skills</div>
 
                 <div className="services">
                     <div className="sub-title">Frontend</div>
@@ -169,7 +169,7 @@ export default function MobileDetails() {
                 <footer className="footer span-row-2">
                     <Link smooth to="/">home</Link>
                     <Link smooth to="/mobile/details/#portfolio">portfolio</Link>
-                    <Link smooth to="/mobile/details/#services">services</Link>
+                    <Link smooth to="/mobile/details/#services">skills</Link>
                     <Link smooth to="/mobile/details/#hire">hire me</Link>
                 </footer>
             </div>

@@ -135,7 +135,7 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="services-title-tablet span-row-2" id="services">Services</div>
+            <div className="services-title-tablet span-row-2" id="services">Skills</div>
             <div className="services-container-tablet span-row-2">
                 <div className="services-item-tablet">
                     <div className="services-inner-title">Frontend</div>
@@ -174,7 +174,7 @@ export default function Details() {
             <footer className="footer span-row-2">
                 <Link smooth to="/">home</Link>
                 <Link smooth to="tablet/details/#portfolio">portfolio</Link>
-                <Link smooth to="tablet/details/#services">services</Link>
+                <Link smooth to="tablet/details/#services">skills</Link>
                 <Link smooth to="tablet/details/#hire">hire me</Link>
             </footer>
         </Layout>
