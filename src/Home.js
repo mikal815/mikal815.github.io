@@ -19,7 +19,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 const MobileLayout = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
   height: 100%;
   background-color: #27292b;
   position: fixed;
@@ -209,7 +208,8 @@ function Home() {
                     <footer className="footer span-row-2">
                         <Link smooth to="/details/#portfolio">portfolio</Link>
                         <Link smooth to="/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>skills</Link>
-                        <Link smooth to="/details/#hire">hire me</Link>
+                        <Link smooth to="/details/#about">about me</Link>
+                        <Link smooth to="/details/#hire">contact me</Link>
                     </footer>
                 </LaptopLayout>
             </MediaQuery>

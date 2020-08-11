@@ -49,7 +49,7 @@ export default class TheMenu extends React.Component {
                 </Link>
 
           <Link onClick={() => this.closeMenu()} smooth to="/mobile/details/#hire">
-            Hire Me
+            Contact Me
                 </Link>
         </Menu>
       </MediaQuery>
