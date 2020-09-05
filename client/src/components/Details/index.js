@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import Logo from '../Logo';
-import MenuTablet from '../MenuTablet';
-import '../TabletDetails/TabletDetails.css';
+import Menu from '../Menu';
+import '../Details/Details.css';
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
@@ -13,12 +13,12 @@ import backend from '../../assets/icons/backend.svg';
 import database from '../../assets/icons/database.svg';
 import additional from '../../assets/icons/additional.svg';
 import { HashLink as Link } from 'react-router-hash-link';
+import axios from 'axios'
 
 const Layout = styled.div`
     display: grid;
-    /* grid-auto-columns: 1fr; */
+    grid-auto-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-columns: repeat(2, 1fr);
     height: 100%;
     background-color: #27292b;
     position: relative;
@@ -27,16 +27,52 @@ const Layout = styled.div`
 `
 
 export default function Details() {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handleChange = (e) => {
+        e.preventDefault();
+
+        if (e.target.id === "name") {
+            setName(e.target.value)
+        }
+
+        else if (e.target.id === "email") {
+            setEmail(e.target.value)
+        }
+
+        else {
+            setMessage(e.target.value)
+        }
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const dataToSubmit = {
+            name,
+            email,
+            message
+        }
+
+        // axios.post("api/sendMail", dataToSubmit)
+        axios.post("/api/sendMail", dataToSubmit)
+
+    }
+
+
     return (
         <Layout id="portfolio">
             <Logo />
-            <MenuTablet />
-            <div className="main-title-tablet span-row-2">Portfolio</div>
+            <Menu />
+            <div className="main-title span-row-2">Portfolio</div>
 
-            <div className="project-tablet">
+            <div className="project">
                 <img src={SurfersDepot} alt="Surfer's Depot" />
-                <div className="inner-title-tablet">Surfer's Depot</div>
-                <div className="caption-tablet">
+                <div className="inner-title">Surfer's Depot</div>
+                <div className="caption">
                     Surfer's Depot is a full stack e-commerce web application. Front-end technologies used:
                     React, Material-UI, Bootstrap, HTML5, CSS3.
                     Back-end technologies used: MongoDB, Node.js, Redux, and Express.
@@ -51,10 +87,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project-tablet">
+            <div className="project">
                 <img src={BPS} alt="Boardwalk Pier Stage" />
-                <div className="inner-title-tablet">Boardwalk Pier Stage</div>
-                <div className="caption-tablet">
+                <div className="inner-title">Boardwalk Pier Stage</div>
+                <div className="caption">
                     This website showcases a public venue promoting a rock concert.
                     This site was built with React and features a countdown clock which display the amount of
                     days, hours, minutes and seconds until the event.
@@ -72,10 +108,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project-tablet">
+            <div className="project">
                 <img src={Icarus} alt="Icarus" />
-                <div className="inner-title-tablet">Icarus Travel</div>
-                <div className="caption-tablet">
+                <div className="inner-title">Icarus Travel</div>
+                <div className="caption">
                     This website showcases a public venue promoting a rock concert.
                     This site was built with React and features a countdown clock which display the amount of
                     days, hours, minutes and seconds until the event.
@@ -93,10 +129,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project-tablet">
+            <div className="project">
                 <img src={Shapes} alt="Shape Shifter" />
-                <div className="inner-title-tablet">Shape Shifter</div>
-                <div className="caption-tablet">
+                <div className="inner-title">Shape Shifter</div>
+                <div className="caption">
                     Shape Shifter is a memory game build with React. The goal of the game is to click on each shape
                     without
                     clicking on the same shape twice. This sounds easy at first however the images are randomly
@@ -108,10 +144,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project-tablet">
+            <div className="project">
                 <img src={MTME} alt="Music to My Ears" />
-                <div className="inner-title-tablet">Music to My Ears</div>
-                <div className="caption-tablet">
+                <div className="inner-title">Music to My Ears</div>
+                <div className="caption">
                     Music to My Ears is an ear training app for any aspiring musician.
                     To really benefit from the app the user will want to understand basic music theory
                     and the 12 notes used in music. The app uses a piano as the interface however
@@ -135,16 +171,16 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="services-title-tablet span-row-2" id="services">Skills</div>
-            <div className="services-container-tablet span-row-2">
-                <div className="services-item-tablet">
+            <div className="services-title span-row-2" id="services">Skills</div>
+            <div className="services-container span-row-2">
+                <div className="services-item">
                     <div className="services-inner-title">Frontend</div>
                     <img src={frontend} alt="frontend" />
                     <div className="services-sub-section">
                         HTML5, CSS3, Javascript(ES6), React, Bootstrap, Responsive Design, jQuery
                         </div>
                 </div>
-                <div className="services-item-tablet">
+                <div className="services-item">
                     <div className="services-inner-title">Server</div>
                     <img src={backend} alt="server" />
                     <div className="services-sub-section">
@@ -152,14 +188,14 @@ export default function Details() {
                         MySQL, MongoDB, Password hashing, Login systems, Authentication
                             </div>
                 </div>
-                <div className="services-item-tablet">
+                <div className="services-item">
                     <div className="services-inner-title">Database</div>
                     <img src={database} alt="database" />
                     <div className="services-sub-section">
                         MySQL, MongoDB, Password hashing, Login systems, Authentication
                             </div>
                 </div>
-                <div className="services-item-tablet">
+                <div className="services-item">
                     <div className="services-inner-title">Additional</div>
                     <img src={additional} alt="additional" />
                     <div className="services-sub-section">
@@ -169,13 +205,31 @@ export default function Details() {
                 </div>
             </div>
 
-            <div className="span-row-2" id="hire">Contact Info</div>
+            <div className="span-row-2 about-title" id="about">About</div>
+
+            <div className="about-blurb">
+                Hello I am a software developer living in Philadelphia.
+                I build good looking functional websites and apps while taking into consideration the user experience and
+                accessability of the end product. I can advance any project using coding abilities, analytical thinking, and creativity.
+                I enjoy the process of becoming familiar with complexity and problem solving and can help you with
+                your development and design challenges.
+            </div>
+
+            <div className="span-row-2 contact-title" id="hire">Contact</div>
+
+            <form className="form span-row-2" onSubmit={handleSubmit}>
+                <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
+                <input className="input" id="email" placeholder="Email" value={email} onChange={handleChange}></input><br></br>
+                <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
+                <button className="btn" onClick={handleSubmit}>Send</button>
+            </form>
 
             <footer className="footer span-row-2">
                 <Link smooth to="/">home</Link>
-                <Link smooth to="tablet/details/#portfolio">portfolio</Link>
-                <Link smooth to="tablet/details/#services">skills</Link>
-                <Link smooth to="tablet/details/#hire">hire me</Link>
+                <Link smooth to="/details/#portfolio">portfolio</Link>
+                <Link smooth to="/details/#services">skills</Link>
+                <Link smooth to="/details/#about">about</Link>
+                <Link smooth to="/details/#hire">contact</Link>
             </footer>
         </Layout>
     )

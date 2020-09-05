@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import Logo from '../Logo';
-import Menu from '../Menu';
-import '../Details/Details.css';
+import MenuTablet from '../MenuTablet';
+import '../TabletDetails/TabletDetails.css';
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
@@ -16,8 +16,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 const Layout = styled.div`
     display: grid;
-    grid-auto-columns: 1fr;
+    /* grid-auto-columns: 1fr; */
     grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
     height: 100%;
     background-color: #27292b;
     position: relative;
@@ -29,13 +30,13 @@ export default function Details() {
     return (
         <Layout id="portfolio">
             <Logo />
-            <Menu />
-            <div className="main-title span-row-2">Portfolio</div>
+            <MenuTablet />
+            <div className="main-title-tablet span-row-2">Portfolio</div>
 
-            <div className="project">
+            <div className="project-tablet">
                 <img src={SurfersDepot} alt="Surfer's Depot" />
-                <div className="inner-title">Surfer's Depot</div>
-                <div className="caption">
+                <div className="inner-title-tablet">Surfer's Depot</div>
+                <div className="caption-tablet">
                     Surfer's Depot is a full stack e-commerce web application. Front-end technologies used:
                     React, Material-UI, Bootstrap, HTML5, CSS3.
                     Back-end technologies used: MongoDB, Node.js, Redux, and Express.
@@ -50,10 +51,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project">
+            <div className="project-tablet">
                 <img src={BPS} alt="Boardwalk Pier Stage" />
-                <div className="inner-title">Boardwalk Pier Stage</div>
-                <div className="caption">
+                <div className="inner-title-tablet">Boardwalk Pier Stage</div>
+                <div className="caption-tablet">
                     This website showcases a public venue promoting a rock concert.
                     This site was built with React and features a countdown clock which display the amount of
                     days, hours, minutes and seconds until the event.
@@ -71,10 +72,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project">
+            <div className="project-tablet">
                 <img src={Icarus} alt="Icarus" />
-                <div className="inner-title">Icarus Travel</div>
-                <div className="caption">
+                <div className="inner-title-tablet">Icarus Travel</div>
+                <div className="caption-tablet">
                     This website showcases a public venue promoting a rock concert.
                     This site was built with React and features a countdown clock which display the amount of
                     days, hours, minutes and seconds until the event.
@@ -92,10 +93,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project">
+            <div className="project-tablet">
                 <img src={Shapes} alt="Shape Shifter" />
-                <div className="inner-title">Shape Shifter</div>
-                <div className="caption">
+                <div className="inner-title-tablet">Shape Shifter</div>
+                <div className="caption-tablet">
                     Shape Shifter is a memory game build with React. The goal of the game is to click on each shape
                     without
                     clicking on the same shape twice. This sounds easy at first however the images are randomly
@@ -107,10 +108,10 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="project">
+            <div className="project-tablet">
                 <img src={MTME} alt="Music to My Ears" />
-                <div className="inner-title">Music to My Ears</div>
-                <div className="caption">
+                <div className="inner-title-tablet">Music to My Ears</div>
+                <div className="caption-tablet">
                     Music to My Ears is an ear training app for any aspiring musician.
                     To really benefit from the app the user will want to understand basic music theory
                     and the 12 notes used in music. The app uses a piano as the interface however
@@ -134,16 +135,16 @@ export default function Details() {
                     </div>
             </div>
 
-            <div className="services-title span-row-2" id="services">Skills</div>
-            <div className="services-container span-row-2">
-                <div className="services-item">
+            <div className="services-title-tablet span-row-2" id="services">Skills</div>
+            <div className="services-container-tablet span-row-2">
+                <div className="services-item-tablet">
                     <div className="services-inner-title">Frontend</div>
                     <img src={frontend} alt="frontend" />
                     <div className="services-sub-section">
                         HTML5, CSS3, Javascript(ES6), React, Bootstrap, Responsive Design, jQuery
                         </div>
                 </div>
-                <div className="services-item">
+                <div className="services-item-tablet">
                     <div className="services-inner-title">Server</div>
                     <img src={backend} alt="server" />
                     <div className="services-sub-section">
@@ -151,14 +152,14 @@ export default function Details() {
                         MySQL, MongoDB, Password hashing, Login systems, Authentication
                             </div>
                 </div>
-                <div className="services-item">
+                <div className="services-item-tablet">
                     <div className="services-inner-title">Database</div>
                     <img src={database} alt="database" />
                     <div className="services-sub-section">
                         MySQL, MongoDB, Password hashing, Login systems, Authentication
                             </div>
                 </div>
-                <div className="services-item">
+                <div className="services-item-tablet">
                     <div className="services-inner-title">Additional</div>
                     <img src={additional} alt="additional" />
                     <div className="services-sub-section">
@@ -172,9 +173,10 @@ export default function Details() {
 
             <footer className="footer span-row-2">
                 <Link smooth to="/">home</Link>
-                <Link smooth to="/details/#portfolio">portfolio</Link>
-                <Link smooth to="/details/#services">skills</Link>
-                <Link smooth to="/details/#hire">hire me</Link>
+                <Link smooth to="tablet/details/#portfolio">portfolio</Link>
+                <Link smooth to="tablet/details/#services">skills</Link>
+                <Link smooth to="tablet/details/#about">about</Link>
+                <Link smooth to="tablet/details/#hire">contact</Link>
             </footer>
         </Layout>
     )

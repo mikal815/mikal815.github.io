@@ -76,3 +76,46 @@
 .services-item img {
     padding-bottom: 2em;
 }
+
+.about-title {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.about-blurb {
+    color: rgb(163, 163, 163);
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    padding-left: 3em;
+}
+
+.input {
+    width: 500px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+.textarea {
+    width: 500px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-bottom: 15px;
+    width: 150px;
+    height: 30px;
+}

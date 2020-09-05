@@ -19,7 +19,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 const MobileLayout = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
   height: 100%;
   background-color: #27292b;
   position: fixed;
@@ -71,7 +70,8 @@ function Home() {
                     <footer className="footer span-row-2">
                         <Link smooth to="/mobile/details/#portfolio">portfolio</Link>
                         <Link smooth to="/mobile/details/#services">skills</Link>
-                        <Link smooth to="/mobile/details/#hire">hire me</Link>
+                        <Link smooth to="/mobile/details/#about">about</Link>
+                        <Link smooth to="/mobile/details/#hire">contact</Link>
                     </footer>
 
                 </MobileLayout>
@@ -140,7 +140,8 @@ function Home() {
                     <footer className="footer span-row-2">
                         <Link smooth to="/tablet/details/#portfolio">portfolio</Link>
                         <Link smooth to="/tablet/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>skills</Link>
-                        <Link smooth to="/tablet/details/#hire">hire me</Link>
+                        <Link smooth to="/tablet/details/#about">about</Link>
+                        <Link smooth to="/tablet/details/#hire">contact</Link>
                     </footer>
                 </TabletLayout>
             </MediaQuery>
@@ -209,7 +210,8 @@ function Home() {
                     <footer className="footer span-row-2">
                         <Link smooth to="/details/#portfolio">portfolio</Link>
                         <Link smooth to="/details/#services" scroll={el => el.scrollIntoView({ behavior: "smooth", block: "start" })}>skills</Link>
-                        <Link smooth to="/details/#hire">hire me</Link>
+                        <Link smooth to="/details/#about">about</Link>
+                        <Link smooth to="/details/#hire">contact</Link>
                     </footer>
                 </LaptopLayout>
             </MediaQuery>

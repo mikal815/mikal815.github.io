@@ -170,7 +170,8 @@ export default function MobileDetails() {
                     <Link smooth to="/">home</Link>
                     <Link smooth to="/mobile/details/#portfolio">portfolio</Link>
                     <Link smooth to="/mobile/details/#services">skills</Link>
-                    <Link smooth to="/mobile/details/#hire">hire me</Link>
+                    <Link smooth to="/mobile/details/#about">about</Link>
+                    <Link smooth to="/mobile/details/#hire">contact</Link>
                 </footer>
             </div>
         </Layout>
