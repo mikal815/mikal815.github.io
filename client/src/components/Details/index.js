@@ -60,6 +60,13 @@ export default function Details() {
         // axios.post("api/sendMail", dataToSubmit)
         axios.post("/api/sendMail", dataToSubmit)
 
+        resetForm();
+    }
+
+    const resetForm = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
     }
 
 
