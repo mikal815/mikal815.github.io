@@ -117,14 +117,13 @@
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: grey;
     padding-top: 7px;
-    padding-left: 1px;
     resize: none;
 }
 
 .btn {
     margin-bottom: 15px;
     width: 220px;
-    height: 40px;
+    height: 38px;
     text-decoration: none;
     color: #ffffff;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
