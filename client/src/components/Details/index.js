@@ -61,7 +61,12 @@ export default function Details() {
         }
 
         // axios.post("api/sendMail", dataToSubmit)
-        axios.post("/api/sendMail", dataToSubmit)
+        axios.post("/api/sendMail", dataToSubmit).then(function (response) {
+            console.log(response)
+            if (response.status === 200) {
+                openModal()
+            }
+        })
 
         resetForm();
 
@@ -236,7 +241,7 @@ export default function Details() {
                 <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
                 <input className="input" id="email" placeholder="Email" value={email} onChange={handleChange}></input><br></br>
                 <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
-                <button className="btn span-row-2" onClick={handleSubmit && openModal}>Send</button>
+                <button className="btn span-row-2" onClick={handleSubmit}>Send</button>
                 <Modal ref={modalRef}>
                     <h1>Thanks</h1>
                     <p>
