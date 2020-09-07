@@ -13,6 +13,7 @@ import backend from '../../assets/icons/backend.svg';
 import database from '../../assets/icons/database.svg';
 import additional from '../../assets/icons/additional.svg';
 import { HashLink as Link } from 'react-router-hash-link';
+import Modal from '../Modal';
 import axios from 'axios'
 
 const Layout = styled.div`
@@ -27,6 +28,8 @@ const Layout = styled.div`
 `
 
 export default function Details() {
+
+    const modalRef = React.useRef();
 
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -61,6 +64,7 @@ export default function Details() {
         axios.post("/api/sendMail", dataToSubmit)
 
         resetForm();
+
     }
 
     const resetForm = () => {
@@ -68,6 +72,10 @@ export default function Details() {
         setEmail('');
         setMessage('');
     }
+
+    const openModal = () => {
+        modalRef.current.openModal()
+    };
 
 
     return (
@@ -228,7 +236,16 @@ export default function Details() {
                 <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
                 <input className="input" id="email" placeholder="Email" value={email} onChange={handleChange}></input><br></br>
                 <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
-                <button className="btn" onClick={handleSubmit}>Send</button>
+                <button className="btn" onClick={handleSubmit && openModal}>Send</button>
+                <Modal ref={modalRef}>
+                    <h1>Thanks</h1>
+                    <p>
+                        Message Sent Successfully!
+                    </p>
+                    <button onClick={() => modalRef.current.close()}>
+                        Close
+                    </button>
+                </Modal>
             </form>
 
             <footer className="footer span-row-2">

@@ -42,8 +42,6 @@ app.post("/api/sendMail", (req, res) => {
         }
     })
 
-    // console.log(req.body)
-
 })
 
 app.listen(5000, () => {
