@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import Logo from '../Logo';
 import MenuTablet from '../MenuTablet';
@@ -13,6 +13,8 @@ import backend from '../../assets/icons/backend.svg';
 import database from '../../assets/icons/database.svg';
 import additional from '../../assets/icons/additional.svg';
 import { HashLink as Link } from 'react-router-hash-link';
+import Modal from '../Modal';
+import axios from 'axios';
 
 const Layout = styled.div`
     display: grid;
@@ -27,6 +29,55 @@ const Layout = styled.div`
 `
 
 export default function Details() {
+
+    const modalRef = React.useRef();
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+
+    const handleChange = (e) => {
+        e.preventDefault();
+
+        if (e.target.id === "name") {
+            setName(e.target.value)
+        }
+
+        else if (e.target.id === "email") {
+            setEmail(e.target.value)
+        }
+
+        else {
+            setMessage(e.target.value)
+        }
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const dataToSubmit = {
+            name,
+            email,
+            message
+        }
+
+        // axios.post("api/sendMail", dataToSubmit)
+        axios.post("/api/sendMail", dataToSubmit)
+
+        resetForm();
+
+    }
+
+    const resetForm = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
+    }
+
+    const openModal = () => {
+        modalRef.current.openModal()
+    };
+
     return (
         <Layout id="portfolio">
             <Logo />
@@ -170,6 +221,22 @@ export default function Details() {
             </div>
 
             <div className="span-row-2" id="hire">Contact Info</div>
+
+            <form className="form span-row-2" onSubmit={handleSubmit}>
+                <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
+                <input className="input" id="email" placeholder="Email" value={email} onChange={handleChange}></input><br></br>
+                <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
+                <button className="btn" onClick={handleSubmit && openModal}>Send</button>
+                <Modal ref={modalRef}>
+                    <h1>Thanks</h1>
+                    <p>
+                        Message Sent Successfully!
+                    </p>
+                    <button onClick={() => modalRef.current.close()}>
+                        Close
+                    </button>
+                </Modal>
+            </form>
 
             <footer className="footer span-row-2">
                 <Link smooth to="/">home</Link>
