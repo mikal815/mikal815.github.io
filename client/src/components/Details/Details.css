@@ -106,16 +106,33 @@
     width: 500px;
     height: 35px;
     margin-bottom: 15px;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: grey;
 }
 
 .textarea {
     width: 500px;
     height: 150px;
     margin-bottom: 15px;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    color: grey;
+    padding-top: 7px;
+    padding-left: 1px;
+    resize: none;
 }
 
 .btn {
     margin-bottom: 15px;
-    width: 150px;
-    height: 30px;
+    width: 220px;
+    height: 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-color: #696969;
+    border: none;
+}
+
+.form {
+    display: grid;
 }
