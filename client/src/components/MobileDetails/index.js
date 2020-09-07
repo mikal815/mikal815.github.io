@@ -8,7 +8,6 @@ import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
 import Shapes from '../../assets/images/Shapes.PNG';
 import SurfersDepot from '../../assets/images/surfersdepot.PNG';
-// import { Link } from 'react-router-dom';
 import frontend from '../../assets/icons/frontend.svg';
 import backend from '../../assets/icons/backend.svg';
 import database from '../../assets/icons/database.svg';
@@ -63,7 +62,12 @@ export default function MobileDetails() {
         }
 
         // axios.post("api/sendMail", dataToSubmit)
-        axios.post("/api/sendMail", dataToSubmit)
+        axios.post("/api/sendMail", dataToSubmit).then(function (response) {
+            console.log(response)
+            if (response.status === 200) {
+                openModal()
+            }
+        })
 
         resetForm();
 
@@ -222,9 +226,9 @@ export default function MobileDetails() {
 
                 <form className="form span-row-2" onSubmit={handleSubmit}>
                     <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
-                    <input className="input" id="email" placeholder="Email" value={email} onChange={handleChange}></input><br></br>
+                    <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
                     <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
-                    <button className="btn" onClick={handleSubmit && openModal}>Send</button>
+                    <button className="btn" onClick={handleSubmit}>Send</button>
                     <Modal ref={modalRef}>
                         <h1>Thanks</h1>
                         <p>

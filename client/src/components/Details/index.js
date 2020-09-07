@@ -52,24 +52,26 @@ export default function Details() {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
 
-        const dataToSubmit = {
-            name,
-            email,
-            message
-        }
+        if (validateEmail(email)) {
+            e.preventDefault();
 
-        // axios.post("api/sendMail", dataToSubmit)
-        axios.post("/api/sendMail", dataToSubmit).then(function (response) {
-            console.log(response)
-            if (response.status === 200) {
-                openModal()
+            const dataToSubmit = {
+                name,
+                email,
+                message
             }
-        })
 
-        resetForm();
+            // axios.post("api/sendMail", dataToSubmit)
+            axios.post("/api/sendMail", dataToSubmit).then(function (response) {
+                console.log(response)
+                if (response.status === 200) {
+                    openModal()
+                }
+            })
 
+            resetForm();
+        }
     }
 
     const resetForm = () => {
@@ -81,6 +83,11 @@ export default function Details() {
     const openModal = () => {
         modalRef.current.openModal()
     };
+
+    const validateEmail = (email) => {
+        const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+    }
 
 
     return (
@@ -239,7 +246,7 @@ export default function Details() {
 
             <form className="form span-row-2" onSubmit={handleSubmit}>
                 <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
-                <input className="input" id="email" placeholder="Email" value={email} onChange={handleChange}></input><br></br>
+                <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
                 <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
                 <button className="btn span-row-2" onClick={handleSubmit}>Send</button>
                 <Modal ref={modalRef}>
