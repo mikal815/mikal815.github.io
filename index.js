@@ -44,6 +44,16 @@ app.post("/api/sendMail", (req, res) => {
 
 })
 
-app.listen(5000, () => {
-    console.log("Server running at port 5000");
+// Default
+if (process.env.NODE_ENV === 'production') {
+    const path = require('path');
+    app.get('/*', (req, res) => {
+        res.sendfile(path.resolve(__dirname, '../client', 'build', 'index.html'))
+    })
+}
+
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+    console.log(`Server running at ${port}`)
 })
