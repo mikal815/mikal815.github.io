@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const nodemailer = require("nodemailer");
+const path = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -45,11 +46,21 @@ app.post("/api/sendMail", (req, res) => {
 })
 
 // Default
-if (process.env.NODE_ENV === 'production') {
-    const path = require('path');
-    app.get('/*', (req, res) => {
-        res.sendfile(path.resolve(__dirname, './client', 'build', 'index.html'))
-    })
+// if (process.env.NODE_ENV === 'production') {
+//     const path = require('path');
+//     app.get('/*', (req, res) => {
+//         res.sendfile(path.resolve(__dirname, './client', 'build', 'index.html'))
+//     })
+// }
+
+if (process.env.NODE_ENV === "production") {
+
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    });
+
 }
 
 const port = process.env.PORT || 5000;
