@@ -234,7 +234,7 @@ export default function Details() {
 
             <div className="span-row-2 about-title" id="about">About</div>
 
-            <div className="about-blurb">
+            <div className="span-row-2 about-blurb">
                 Hello I am a software developer living in Philadelphia.
                 I build good looking functional websites and apps while taking into consideration the user experience and
                 accessability of the end product. I can advance any project using coding abilities, analytical thinking, and creativity.
