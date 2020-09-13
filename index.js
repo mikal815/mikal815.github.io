@@ -64,8 +64,9 @@ app.post("/api/sendMail", (req, res) => {
 // }
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html')
-})
+    // res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html')
+    res.send('<h1>Node App!</h1>');
+});
 
 const port = process.env.PORT || 5000;
 
