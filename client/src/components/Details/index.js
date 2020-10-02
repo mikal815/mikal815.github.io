@@ -64,15 +64,13 @@ export default function Details() {
 
             // axios.post("api/sendMail", dataToSubmit)
             axios.post("/api/sendMail", dataToSubmit).then(function (response) {
-                // console.log(response)
-                // if (response.status === 200) {
-                //     openModal()
-                // }
-
-                resetForm();
-
+                console.log(response)
+                if (response.status === 200) {
+                    openModal()
+                }
             })
 
+            resetForm();
         }
     }
 
