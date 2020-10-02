@@ -5,6 +5,7 @@ const nodemailer = require("nodemailer");
 const path = require('path');
 require('dotenv').config();
 
+
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -37,6 +38,7 @@ app.post("/api/sendMail", (req, res) => {
     smtpTrans.sendMail(mailOpts, (error, response) => {
         if (error) {
             res.send('contact-failure') // Show a page indicating failure
+            console.log(error);
         }
         else {
             res.send('contact-success') // Show a page indicating success
