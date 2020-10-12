@@ -15,7 +15,7 @@ app.use(cookieParser());
 
 
 
-app.post("/api/sendMail", (req, res) => {
+app.post("https://api.sendgrid.com/v3/mail/send HTTP/1.1", (req, res) => {
 
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {

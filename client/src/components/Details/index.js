@@ -63,7 +63,7 @@ export default function Details() {
             }
 
             // axios.post("api/sendMail", dataToSubmit)
-            axios.post("/api/sendMail", dataToSubmit).then(function (response) {
+            axios.post("https://api.sendgrid.com/v3/mail/send HTTP/1.1", dataToSubmit).then(function (response) {
                 console.log(response)
                 if (response.status === 200) {
                     openModal()
