@@ -39,7 +39,6 @@ app.post("/api/sendMail", (req, res) => {
     smtpTrans.sendMail(mailOpts, (error, response) => {
         if (error) {
             res.send('contact-failure') // Show a page indicating failure
-            console.log(error);
         }
         else {
             res.send('contact-success') // Show a page indicating success
