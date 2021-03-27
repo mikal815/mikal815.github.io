@@ -2,8 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const path = require('path');
+const nodemailer = require('nodemailer');
 require('dotenv').config();
-const DOMAIN = 'mg.mmportfolio.dev';
+
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -11,32 +12,52 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 
-app.post('/api/sendMail', (req, res) => {
+app.post("/api/sendMail", (req, res) => {
 
+    // Instantiate the SMTP server
+    const smtpTrans = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+            user: process.env.MYEMAIL,
+            pass: process.env.PASSWORD
+        }
+    })
 
+    console.log(req.body.name, req.body.email, req.body.message)
 
-    const data = {
-        to: 'mikal815@gmail.com', // Change to your recipient
-        from: `${req.body.email}`, // Change to your verified sender
+    // Specify what the email will look like
+    const mailOpts = {
+        from: `${req.body.email}`, // This is ignored by Gmail
+        to: process.env.MYEMAIL,
         subject: 'New message!/michaelmensinger.com',
-        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`,
-        html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-    };
+        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    }
 
-    mg.messages().send(data, function (error, body) {
-        console.log(body);
-    });
+    // Attempt to send the email
+    smtpTrans.sendMail(mailOpts, (error, response) => {
+        if (error) {
+            res.send('contact-failure') // Show a page indicating failure
+        }
+        else {
+            res.send('contact-success') // Show a page indicating success
+        }
+    })
 
-});
+    // console.log(req.body)
+
+})
+
 
 
 //if (apps.env.NODE_ENV === "production") {
 
 app.use(express.static('client/build'));
 
-//  app.get('*', (req, res) => {
-//    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-//});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+// });
 
 //}
 

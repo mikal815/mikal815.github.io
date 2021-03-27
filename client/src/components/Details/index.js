@@ -62,7 +62,7 @@ export default function Details() {
                 message
             }
 
-            axios.post("api/sendMail", dataToSubmit).then(function (response) {
+            axios.post("/api/sendMail", dataToSubmit).then(function (response) {
                 console.log(response)
                 if (response.status === 200) {
                     openModal()
