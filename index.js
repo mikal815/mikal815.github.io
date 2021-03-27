@@ -3,7 +3,6 @@ const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const path = require('path');
 require('dotenv').config();
-const mailgun = require('mailgun-js');
 const DOMAIN = 'mg.mmportfolio.dev';
 
 const app = express();
@@ -14,7 +13,7 @@ app.use(cookieParser());
 
 app.post('/api/sendMail', (req, res) => {
 
-    const mg = mailgun({ apiKey: '3a3ed0b15f6b73c2eb5b88a0008ddd2b-4879ff27-29351e1d', domain: DOMAIN });
+
 
     const data = {
         to: 'mikal815@gmail.com', // Change to your recipient
