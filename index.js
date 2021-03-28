@@ -4,7 +4,8 @@ const cookieParser = require('cookie-parser');
 const path = require('path');
 const API_KEY = 'MAILGUN_API_KEY';
 const DOMAIN = 'MAILGUN_DOMAIN';
-const mailgun = require('mailgun-js')({ apiKey: API_KEY, domain: DOMAIN });
+const mailgun = require('mailgun-js')
+const mg = mailgun({ apiKey: API_KEY, domain: DOMAIN });
 // const nodemailer = require('nodemailer');
 require('dotenv').config();
 
@@ -24,7 +25,7 @@ app.post("/api/sendMail", (req, res) => {
         text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     };
 
-    mailgun.messages().send(data, (error, body) => {
+    mg.messages().send(data, (error, body) => {
         console.log(body);
 
         if (error) {
