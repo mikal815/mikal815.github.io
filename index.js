@@ -26,10 +26,10 @@ app.post("/api/sendMail", (req, res) => {
     };
 
     mg.messages().send(data, (error, body) => {
-        console.log(body, error);
+        console.log(body);
 
         if (error) {
-            res.send('contact-failure')
+            res.send(error)
         }
         else {
             res.send('contact-success')
