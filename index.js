@@ -26,6 +26,13 @@ app.post("/api/sendMail", (req, res) => {
 
     mailgun.messages().send(data, (error, body) => {
         console.log(body);
+
+        if (error) {
+            res.send('contact-failure')
+        }
+        else {
+            res.send('contact-success')
+        }
     });
 
 
