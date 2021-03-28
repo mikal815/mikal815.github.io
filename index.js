@@ -26,7 +26,7 @@ app.post("/api/sendMail", (req, res) => {
     };
 
     mg.messages().send(data, (error, body) => {
-        console.log(body);
+        console.log(body, error);
 
         if (error) {
             res.send('contact-failure')
