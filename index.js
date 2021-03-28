@@ -29,7 +29,7 @@ app.post("/api/sendMail", (req, res) => {
         console.log(body);
 
         if (error) {
-            res.send('contact-failure', error)
+            res.status(status).send(body)
         }
         else {
             res.send('contact-success')
