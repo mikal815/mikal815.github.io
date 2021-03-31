@@ -20,7 +20,7 @@ app.post("/api/sendMail", (req, res) => {
 
     const data = {
         from: `${req.body.email}`,
-        to: 'app206719015@heroku.com',
+        to: 'mikal815@gmail.com',
         subject: 'New message!/michaelmensinger.com',
         text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     };
