@@ -2,11 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const path = require('path');
-const API_KEY = process.env.MAILGUN_API_KEY;
-const DOMAIN = process.env.MAILGUN_DOMAIN;
+// const API_KEY = process.env.MAILGUN_API_KEY;
+// const DOMAIN = process.env.MAILGUN_DOMAIN;
 const mailgun = require('mailgun-js')
-const mg = mailgun({ apiKey: API_KEY, domain: DOMAIN });
-// const nodemailer = require('nodemailer');
+// const mg = mailgun({ apiKey: API_KEY, domain: DOMAIN });
 require('dotenv').config();
 
 
@@ -25,16 +24,16 @@ app.post("/api/sendMail", (req, res) => {
         text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     };
 
-    mg.messages().send(data, (error, body) => {
-        console.log(body);
+    // mg.messages().send(data, (error, body) => {
+    //     console.log(body);
 
-        if (error) {
-            res.send('contact-failure', error)
-        }
-        else {
-            res.send('contact-success')
-        }
-    });
+    //     if (error) {
+    //         res.send('contact-failure', error)
+    //     }
+    //     else {
+    //         res.send('contact-success')
+    //     }
+    // });
 
 
     // const smtpTrans = nodemailer.createTransport({
@@ -70,15 +69,15 @@ app.post("/api/sendMail", (req, res) => {
 })
 
 
-if (apps.env.NODE_ENV === "production") {
+// if (apps.env.NODE_ENV === "production") {
 
-    app.use(express.static('client/build'));
+app.use(express.static('client/build'));
 
-    app.get('*', (req, res) => {
-        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
-    });
+// app.get('*', (req, res) => {
+// res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+// });
 
-}
+// }
 
 
 const port = process.env.PORT || 5000;
