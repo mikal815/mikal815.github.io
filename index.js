@@ -70,7 +70,6 @@ app.post("/api/sendMail", (req, res) => {
 })
 
 
-
 // if (apps.env.NODE_ENV === "production") {
 
 app.use(express.static('client/build'));
