@@ -73,11 +73,15 @@ app.post("/api/sendMail", (req, res) => {
 
 // app.use(express.static('client/public'));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
-});
+// app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'client', 'public', 'index.html'))
+// });
 
 // }
+
+app.get('/', (req, res) => {
+    res.send('client/public');
+});
 
 
 const port = process.env.PORT || 5000;
