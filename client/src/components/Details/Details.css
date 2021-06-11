@@ -1,68 +1,88 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 35px;
+    background-color: #27292b;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
 .project {
     display: grid;
-    margin-bottom: 5em;
     justify-items: center;
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 80px;
 }
 
 .project img {
-    height: 15em;
+    height: 280px;
+    padding-bottom: 40px;
 }
 
 .caption {
     color: rgb(163, 163, 163);
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    background-color:#27292b;
+    background-color:black;
     font-size: 1em;
-    padding-right: 3em;
-    padding-left: 3em;
-    height: 16em;
+    height: 280px;
+    width: 400px;
+    line-height: 20px;
+    letter-spacing: 0.0125px;
 }
 
 .main-title {
     font-size: 1.8em;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #ffffff;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    padding-top: 95px;
+    padding-bottom: 20px;
 }
 
 .inner-title {
-    color: #666666;
+    color: white;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    font-size: 1.8em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    font-size: 21px;
     text-align: center;
+    padding-bottom: 25px;
 }
 
 .services-item {
     display: grid;
-    background-image: linear-gradient(to bottom, #27292b,#27292b, rgb(163, 163, 163),rgb(163, 163, 163),rgb(130, 130, 130));
-    color: #27292b;
+    /* background-image: linear-gradient(to bottom, #27292b,#27292b, rgb(163, 163, 163),rgb(163, 163, 163),rgb(130, 130, 130)); */
+    color: white;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    font-size: 1em;
-    margin-bottom: 2em;
-    padding-bottom: 2em;
+    padding-top: 20px;
+    padding-bottom: 95px;
     justify-items: center;
     align-items: center;
     width: 15em;
-    /* height: 30em; */
     margin-right: 1em;
     margin-left: 1em;
+    border: solid 4px rgb(130, 130, 130);
+    text-align: center;
+    line-height: 19px;
+    letter-spacing: 0.5px;
 }
 
 .services-container {
     display: flex;
     place-content: center;
+    padding-bottom: 65px;
+}
+
+.services-title {
+    padding-top: 95px;
 }
 
 .services-inner-title {
-    color: #666666;
+    color: white;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
-    font-size: 1.8em;
-    padding-bottom: 1em;
-    /* margin-top: -0.6em; */
+    font-size: 22px;
+    padding-bottom: 35px;
     text-align: center;
+    padding-top: 25px;
 }
 
 .services-sub-section {
@@ -74,7 +94,7 @@
 }
 
 .services-item img {
-    padding-bottom: 2em;
+    padding-bottom: 25px;
 }
 
 .about-title {
@@ -82,8 +102,6 @@
     font-size: 1.8em;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #ffffff;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 .contact-title {
@@ -91,8 +109,6 @@
     font-size: 1.8em;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     color: #ffffff;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 .about-blurb {
@@ -103,6 +119,7 @@
     width: 50em;
     text-indent: 50px;
     line-height: 1.6;
+    padding-bottom: 45px;
 }
 
 .input {
@@ -137,4 +154,15 @@
 
 .form {
     display: grid;
+}
+
+.email {
+    color: rgb(163, 163, 163);
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    width: 50em;
+    line-height: 1.6;
+    padding-bottom: 50px;
+    display: grid;
+    text-align: center;
 }

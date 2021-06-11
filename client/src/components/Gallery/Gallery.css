@@ -30,6 +30,7 @@
 #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
 #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
 #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
 
 img{
 	/* -webkit-filter: grayscale(1); */

@@ -6,6 +6,7 @@ import ShapeShifter from '../../assets/images/Shapes.PNG';
 import MTME from '../../assets/images/mtme.PNG';
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
+import OCHS from '../../assets/images/OCHS.PNG';
 
 class SlideCarousel extends Component {
 
@@ -28,6 +29,11 @@ class SlideCarousel extends Component {
                     <a href="https://vast-mesa-70867.herokuapp.com/">
                         <div>
                             <img alt="Surfer's Depot" src={SurfersDepot} />
+                        </div>
+                    </a>
+                    <a href="http://oceancity-baseball.surge.sh/">
+                        <div>
+                            <img alt="OCHS Baseball" src={OCHS} />
                         </div>
                     </a>
                     <a href="http://fluffy-zoo.surge.sh/">

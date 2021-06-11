@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import styled from 'styled-components';
 import Logo from '../Logo';
 import Menu from '../Menu';
 import '../Details/Details.css';
 import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
+import OCHS from '../../assets/images/OCHS.PNG'
 import Shapes from '../../assets/images/Shapes.PNG';
 import SurfersDepot from '../../assets/images/surfersdepot.PNG';
 import frontend from '../../assets/icons/frontend.svg';
@@ -16,16 +16,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Modal from '../Modal';
 import axios from 'axios'
 
-const Layout = styled.div`
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-rows: auto;
-    height: 100%;
-    background-color: #27292b;
-    position: relative;
-    padding-left: 5vw;
-    padding-right: 5vw;
-`
+
 
 export default function Details() {
 
@@ -90,112 +81,85 @@ export default function Details() {
 
 
     return (
-        <Layout id="portfolio">
-            <Logo />
+        <div className="layout">
+            {/* <Logo /> */}
             <Menu />
-            <div className="main-title span-row-2">Portfolio</div>
+            <div className="main-title span-row-2" id="portfolio" >Portfolio</div>
 
             <div className="project">
-                <img src={SurfersDepot} alt="Surfer's Depot" />
                 <div className="inner-title">Surfer's Depot</div>
+                <img src={SurfersDepot} alt="Surfer's Depot" />
                 <div className="caption">
-                    Surfer's Depot is a full stack e-commerce web application. Front-end technologies used:
+                    Full stack e-commerce web app. Front-end tech used:
                     React, Material-UI, Bootstrap, HTML5, CSS3.
-                    Back-end technologies used: MongoDB, Node.js, Redux, and Express.
-                    This application showcases a login system with password hashing using JSON
-                    webtokens. The user can browse a large inventory of surfboards for sale and can filter
+                    Back-end tech used: MongoDB, Node.js, Redux, and Express.
+                    Login system with password hashing implemented. User can browse an inventory of surfboards and filter
                     results by brand, length, shape,
-                    and price. Once logged in a user can add or remove items from their cart which persists with
+                    and price. A logged in user can add or remove items from their cart which persists with
                     MongoDB.
-                    Surfer's Depot also has an admin view which allows the administrator to add new products onto
+                    Admin view allows the administrator to add new products onto
                     the
-                    site. The user must meet the proper authentication to access the admin area.
+                    site. Users must pass authentication to access the admin area.
                     </div>
             </div>
 
             <div className="project">
-                <img src={BPS} alt="Boardwalk Pier Stage" />
+                <div className="inner-title">OCHS Baseball</div>
+                <img src={OCHS} alt="OCHS Baseball" />
+                <div className="caption">
+                    Site featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid
+                    </div>
+            </div>
+
+            <div className="project">
                 <div className="inner-title">Boardwalk Pier Stage</div>
+                <img src={BPS} alt="Boardwalk Pier Stage" />
                 <div className="caption">
-                    This website showcases a public venue promoting a rock concert.
-                    This site was built with React and features a countdown clock which display the amount of
-                    days, hours, minutes and seconds until the event.
-                    A carousel made using the npm package "react-slick" flips through images as a background on the
-                    initial view.
-                    Material-UI was used to create the side menu drawer, icons, and toolbar. This site also utilized
-                    the npm
-                    package "react-scroll" which was used to vertically scroll the user directly to the appropriate
-                    content
-                    after the corresponding link in the side drawer is clicked. Another npm package "react-reveal"
-                    was used
-                    for many of the animations such as the zoom effect used on the second section of the page.
-                    A reusable button component is used to minimize code and complexity. An iframe shows the venue's
+                    Featuring React on the frontend as well as a countdown clock which displays the amount of
+                    days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
+                    After clicking a link the user is vertically scrolled directly to the appropriate content.
+                    Animations give a zoom effect on certain elements. An iframe shows the venue's
                     location on google maps.
                     </div>
             </div>
 
             <div className="project">
-                <img src={Icarus} alt="Icarus" />
                 <div className="inner-title">Icarus Travel</div>
+                <img src={Icarus} alt="Icarus" />
                 <div className="caption">
-                    This website showcases a public venue promoting a rock concert.
-                    This site was built with React and features a countdown clock which display the amount of
-                    days, hours, minutes and seconds until the event.
-                    A carousel made using the npm package "react-slick" flips through images as a background on the
-                    initial view.
-                    Material-UI was used to create the side menu drawer, icons, and toolbar. This site also utilized
-                    the npm
-                    package "react-scroll" which was used to vertically scroll the user directly to the appropriate
-                    content
-                    after the corresponding link in the side drawer is clicked. Another npm package "react-reveal"
-                    was used
-                    for many of the animations such as the zoom effect used on the second section of the page.
-                    A reusable button component is used to minimize code and complexity. An iframe shows the venue's
-                    location on google maps.
+                   Site built using React on the front-end, carousel and varios animations.
                     </div>
             </div>
 
             <div className="project">
-                <img src={Shapes} alt="Shape Shifter" />
                 <div className="inner-title">Shape Shifter</div>
+                <img src={Shapes} alt="Shape Shifter" />
                 <div className="caption">
-                    Shape Shifter is a memory game build with React. The goal of the game is to click on each shape
-                    without
-                    clicking on the same shape twice. This sounds easy at first however the images are randomly
-                    repositioned
-                    after every click creating quite a challenge. There are 12 shapes in total so once your score
-                    reaches 12 you win.
-                    Click a shape you've already clicked and the score is reset to zero and a new game begins. A top
+                    Memory game build with React. Goal is to click each shape
+                    without clicking the same shape twice. Images are randomly repositioned
+                    after every click increasing difficulty. 12 shapes in total; once your score
+                    reaches 12 you win. Click a shape twice and score is reset to zero and a new game begins. Top
                     score indicator helps you gauge your progress.
                     </div>
             </div>
 
             <div className="project">
-                <img src={MTME} alt="Music to My Ears" />
                 <div className="inner-title">Music to My Ears</div>
+                <img src={MTME} alt="Music to My Ears" />
                 <div className="caption">
-                    Music to My Ears is an ear training app for any aspiring musician.
-                    To really benefit from the app the user will want to understand basic music theory
-                    and the 12 notes used in music. The app uses a piano as the interface however
-                    the knowledge and understanding gained through the app is universal and can be transferred to
-                    any instrument. The application has multiple modes; it is suggested to begin with the
+                    Ear training app for musicians.
+                    Multiple modes featured; it is suggested to begin with the
                     "Intervals" mode. Intervals are the sound created from going from one note to the next.
                     These distinct sounds can be made more easily identified using associations.
-                    These associations are best made with relating the interval with a famous or popular
-                    snippet of music taken from a well known song. For example the sound created from the first two
-                    notes
-                    from the "Star Wars" theme is an interval of a perfect 5th.
                     In this "Intervals" mode the Music to My Ears app runs a sequence of two notes consecutively
-                    then
-                    it is the user's turn. The user must mimic the same sequence that the program just executed
-                    using only their ears as a guide. The key farthest to the left is the key the user MUST start
-                    on.
-                    This app was built using React and Bootstrap on the front-end and Node.js, Express,
-                    and MongoDB (To save the scores) on the back-end. This app also features a login system using
+                    then it is the user's turn to mimic the same sequence using only their ears as a guide. The key 
+                    farthest to the left is the key the user must start on.
+                    Built using React and Bootstrap on the frontend and Node.js, Express,
+                    and MongoDB (To save the scores) on the backend. Also features a login system using
                     Passport.js.
-
                     </div>
             </div>
+
 
             <div className="services-title span-row-2" id="services">Skills</div>
             <div className="services-container span-row-2">
@@ -234,16 +198,19 @@ export default function Details() {
             <div className="span-row-2 about-title" id="about">About</div>
 
             <div className="span-row-2 about-blurb">
-                Hello I am a software developer living in Philadelphia.
-                I build good looking functional websites and apps while taking into consideration the user experience and
-                accessability of the end product. I can advance any project using coding abilities, analytical thinking, and creativity.
-                I enjoy the process of becoming familiar with complexity and problem solving and can help you with
-                your development and design challenges.
+                Software developer building good looking functional websites and apps while taking into consideration the user experience and
+                accessability of the end product.
+                Complex design and developmet challenges are solved using familiarity with technologies and tools as well as coding abilities, analytical thinking, and creativity.
+   
             </div>
 
             <div className="span-row-2 contact-title" id="hire">Contact</div>
 
-            <form className="form span-row-2" onSubmit={handleSubmit}>
+            <div className="span-row-2 email">
+                mikal815@gmail.com
+            </div>
+
+            {/* <form className="form span-row-2" onSubmit={handleSubmit}>
                 <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
                 <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
                 <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
@@ -257,7 +224,7 @@ export default function Details() {
                         Close
                     </button>
                 </Modal>
-            </form>
+            </form> */}
 
             <footer className="footer span-row-2">
                 <Link smooth to="/">home</Link>
@@ -266,6 +233,7 @@ export default function Details() {
                 <Link smooth to="/details/#about">about</Link>
                 <Link smooth to="/details/#hire">contact</Link>
             </footer>
-        </Layout>
+        </div>
+
     )
 }

@@ -39,9 +39,10 @@ const TabletLayout = styled.div`
 const LaptopLayout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100%;
+  grid-auto-rows: 1fr;  
+  height: 100vh;
   background-color: #27292b;
-  position: fixed;
+  position: relative;
   padding-left: 5vw;
   padding-right: 5vw;
 `
@@ -149,18 +150,23 @@ function Home() {
 
             <MediaQuery minDeviceWidth={850}>
                 <LaptopLayout>
-                    <Logo />
+                    {/* <Logo /> */}
                     <Menu />
 
-                    <div className="slogan-container span-row-2">
-                        <div className="slogan-text">
-                            Actualizing intuitive and engaging experiences ~
-                        </div>
+                    <div className="name span-row-2">
+                        Michael Mensinger
                     </div>
 
                     <div className="title span-row-2">
                         Software Developer &nbsp; | &nbsp; Philadelphia, PA
                     </div>
+
+                    <div className="slogan-container span-row-2">
+                        <div className="slogan-text">
+                            "Actualizing intuitive and engaging experiences"
+                        </div>
+                    </div>
+
 
                     <div className="skills-container span-row-2">
                         <div className="skills-card skills-card-frontend">

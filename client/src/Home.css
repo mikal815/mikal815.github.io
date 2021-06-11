@@ -121,7 +121,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-image: linear-gradient(to right,#eaad85,#e7a273, #e08648);
+    background-color: #e08648;
+    /* background-image: linear-gradient(to right,#eaad85,#e7a273, #e08648); */
+    /* border: solid 4px #eaad85; */
     width: 90vw;
     height: 45px;
   }
@@ -134,6 +136,7 @@
   
   .skills-container {
     display: flex;
+    padding-bottom: 45px;
   }
 
   .hidden-dash {
@@ -144,33 +147,18 @@
    display: grid;
    justify-items: center;
    align-items: center;
-   color: #29272b;
-   font-size: 0.9em;
+   color: #227d5b;
+   font-size: 15px;
    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-   font-weight: 400;
    line-height: 1.5;
    letter-spacing: 0.00938em;
-   border: solid 2px #227d5b; 
-   width: 10rem;
+   border: solid 3.5px #227d5b; 
+   width: 12rem;
    margin-right: 0.5rem;
    margin-left: 0.5rem;
-   padding: 10px;
-  }
-
-  .skills-card-frontend {
-    background-image: linear-gradient(#29272b, #29272b, #29272b,#2fac7e,#2fac7e, #2fac7e,rgb(34,125,91));
-  }
-
-  .skills-card-server {
-    background-image: linear-gradient(#29272b, #29272b,#29272b, #2fac7e, #2fac7e, #2fac7e,rgb(34,125,91));
-   }
-
-   .skills-card-database {
-    background-image: linear-gradient(#29272b, #29272b, #29272b,#2fac7e,#2fac7e, #2fac7e,rgb(34,125,91));
-  }
-
-   .skills-card-additional {
-    background-image: linear-gradient(#29272b, #29272b,#29272b, #2fac7e, #2fac7e,#2fac7e,rgb(34,125,91));
+   /* padding: 10px; */
+   padding-top: 15px;
+   padding-bottom: 15px;
   }
 
   .heading {
@@ -184,12 +172,15 @@
     padding-top: 1rem;
   }
 
-  .slogan-container {
-    display: grid;
-    place-items: center;
-    color: #ffffff;
-    font-size: 1.5em;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  .name {
+    color: white;
+    font-family: "Expansiva-BoldItalic","Helvetica",Helvetica,Arial,sans-serif;
+    font-size: 23px;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    letter-spacing: 2px;
+    padding-top: 25px;
   }
 
   .title {
@@ -199,6 +190,20 @@
     justify-self: center;
     align-self: center;
     margin: auto;
+    letter-spacing: 1px;
+  }
+
+  .slogan-container {
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+    font-size: 21px;
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    padding-bottom: 25px;
+  }
+
+  .gallery {
+    padding-bottom: 35px;
   }
 
   
