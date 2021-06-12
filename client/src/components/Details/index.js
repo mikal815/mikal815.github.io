@@ -8,10 +8,10 @@ import MTME from '../../assets/images/mtme.PNG';
 import OCHS from '../../assets/images/OCHS.PNG'
 import Shapes from '../../assets/images/Shapes.PNG';
 import SurfersDepot from '../../assets/images/surfersdepot.PNG';
-import frontend from '../../assets/icons/frontend.svg';
-import backend from '../../assets/icons/backend.svg';
-import database from '../../assets/icons/database.svg';
-import additional from '../../assets/icons/additional.svg';
+import frontend from '../../assets/icons/frontend-big.svg';
+import backend from '../../assets/icons/backend-big.svg';
+import database from '../../assets/icons/database-big.svg';
+import additional from '../../assets/icons/additional-big.svg';
 import { HashLink as Link } from 'react-router-hash-link';
 import Modal from '../Modal';
 import axios from 'axios'
@@ -93,7 +93,7 @@ export default function Details() {
                     Full stack e-commerce web app. Front-end tech used:
                     React, Material-UI, Bootstrap, HTML5, CSS3.
                     Back-end tech used: MongoDB, Node.js, Redux, and Express.
-                    Login system with password hashing implemented. User can browse an inventory of surfboards and filter
+                    Uses login system with password hashing. User can browse an inventory of surfboards and filter
                     results by brand, length, shape,
                     and price. A logged in user can add or remove items from their cart which persists with
                     MongoDB.
@@ -104,36 +104,16 @@ export default function Details() {
             </div>
 
             <div className="project">
-                <div className="inner-title">OCHS Baseball</div>
-                <img src={OCHS} alt="OCHS Baseball" />
-                <div className="caption">
-                    Site featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid
-                    </div>
-            </div>
-
-            <div className="project">
-                <div className="inner-title">Boardwalk Pier Stage</div>
-                <img src={BPS} alt="Boardwalk Pier Stage" />
-                <div className="caption">
-                    Featuring React on the frontend as well as a countdown clock which displays the amount of
-                    days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
-                    After clicking a link the user is vertically scrolled directly to the appropriate content.
-                    Animations give a zoom effect on certain elements. An iframe shows the venue's
-                    location on google maps.
-                    </div>
-            </div>
-
-            <div className="project">
                 <div className="inner-title">Icarus Travel</div>
-                <img src={Icarus} alt="Icarus" />
+                <a href="http://superb-science.surge.sh/"><img src={Icarus} alt="Icarus" /></a>
                 <div className="caption">
-                   Site built using React on the front-end, carousel and varios animations.
+                    Features include React on the front-end with carousel and varios animations.
                     </div>
             </div>
 
             <div className="project">
                 <div className="inner-title">Shape Shifter</div>
-                <img src={Shapes} alt="Shape Shifter" />
+                <a href="http://fluffy-zoo.surge.sh/"><img src={Shapes} alt="Shape Shifter" /></a>
                 <div className="caption">
                     Memory game build with React. Goal is to click each shape
                     without clicking the same shape twice. Images are randomly repositioned
@@ -144,54 +124,87 @@ export default function Details() {
             </div>
 
             <div className="project">
-                <div className="inner-title">Music to My Ears</div>
-                <img src={MTME} alt="Music to My Ears" />
+                <div className="inner-title">Boardwalk Pier Stage</div>
+                <a href="http://the-event2021.surge.sh/" ><img src={BPS} alt="Boardwalk Pier Stage" /></a>
                 <div className="caption">
-                    Ear training app for musicians.
-                    Multiple modes featured; it is suggested to begin with the
-                    "Intervals" mode. Intervals are the sound created from going from one note to the next.
-                    These distinct sounds can be made more easily identified using associations.
-                    In this "Intervals" mode the Music to My Ears app runs a sequence of two notes consecutively
-                    then it is the user's turn to mimic the same sequence using only their ears as a guide. The key 
+                    Featuring React on the frontend as well as a countdown clock which displays the amount of
+                    days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
+                    After clicking a link the user is vertically scrolled directly to the appropriate content.
+                    Animations give a zoom effect on certain elements. An iframe shows the venue's
+                    location on google maps.
+                    </div>
+            </div>
+
+            <div className="project">
+                <div className="inner-title">OCHS Baseball</div>
+                <a href="http://oceancity-baseball.surge.sh/"><img src={OCHS} alt="OCHS Baseball" /></a>
+                <div className="caption">
+                    Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
+                    </div>
+            </div>
+
+            <div className="project">
+                <div className="inner-title">Music to My Ears</div>
+                <a href="https://music-to-my-ears-1.herokuapp.com/"><img src={MTME} alt="Music to My Ears" /></a>
+                <div className="caption">
+                    Ear training app for musicians using intervals.
+                    The app runs a sequence of two notes consecutively
+                    and the user must mimic the same sequence using only their ears as a guide. The key
                     farthest to the left is the key the user must start on.
-                    Built using React and Bootstrap on the frontend and Node.js, Express,
-                    and MongoDB (To save the scores) on the backend. Also features a login system using
+                    Built using React on the frontend and Node.js, Express,
+                    and MongoDB (save score) on the backend. Also features a login system using
                     Passport.js.
                     </div>
             </div>
 
 
-            <div className="services-title span-row-2" id="services">Skills</div>
+            <div className="services-title span-row-2" id="services">Services</div>
             <div className="services-container span-row-2">
                 <div className="services-item">
                     <div className="services-inner-title">Frontend</div>
                     <img src={frontend} alt="frontend" />
-                    <div className="services-sub-section">
-                        HTML5, CSS3, Javascript(ES6), React, Bootstrap, Responsive Design, jQuery
-                        </div>
+                    <div>HTML5</div>
+                    <div>CSS3</div>
+                    <div>Javascript(ES6)</div>
+                    <div>React</div>
+                    <div>Responsive Design</div>
+                    <div>Photoshop</div>
                 </div>
                 <div className="services-item">
                     <div className="services-inner-title">Server</div>
                     <img src={backend} alt="server" />
                     <div className="services-sub-section">
-                        Node.js, Express, Redux, Rest API systems, Payment systems,
-                        MySQL, MongoDB, Password hashing, Login systems, Authentication
-                            </div>
+                        <div>Node.js</div>
+                        <div>Express</div>
+                        <div>React</div>
+                        <div>Redux</div>
+                        <div>Rest API</div>
+                        <div>Payment systems</div>
+                    </div>
                 </div>
                 <div className="services-item">
                     <div className="services-inner-title">Database</div>
                     <img src={database} alt="database" />
                     <div className="services-sub-section">
-                        MySQL, MongoDB, Password hashing, Login systems, Authentication
-                            </div>
+                        <div>MySQL</div>
+                        <div>MongoDB</div>
+                        <div>Password hashing</div>
+                        <div>Authentication</div>
+                        <div>Authorization</div>
+                        <div className="hidden-dash">-</div>
+                    </div>
                 </div>
                 <div className="services-item">
                     <div className="services-inner-title">Additional</div>
                     <img src={additional} alt="additional" />
                     <div className="services-sub-section">
-                        Data driven web development, Big O notation, Single page apps, Mocha/Chai unit testing, Implementing
-                        middleware, VS Code, Continuous Integration
-                        </div>
+                        <div>Debugging</div>
+                        <div>Tech integration</div>
+                        <div>Project Management</div>
+                        <div>Scaling</div>
+                        <div>Data Scraping</div>
+                        <div className="hidden-dash">-</div>
+                    </div>
                 </div>
             </div>
 
@@ -201,7 +214,7 @@ export default function Details() {
                 Software developer building good looking functional websites and apps while taking into consideration the user experience and
                 accessability of the end product.
                 Complex design and developmet challenges are solved using familiarity with technologies and tools as well as coding abilities, analytical thinking, and creativity.
-   
+                Certified "Full stack Web Developer" through UPenn LPS coding bootcamp & The New York Code + Design Academy.
             </div>
 
             <div className="span-row-2 contact-title" id="hire">Contact</div>

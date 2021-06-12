@@ -13,7 +13,7 @@
     justify-items: center;
     background-color: black;
     padding-top: 30px;
-    padding-bottom: 80px;
+    height: auto;
 }
 
 .project img {
@@ -22,14 +22,15 @@
 }
 
 .caption {
-    color: rgb(163, 163, 163);
+    color: rgb(199, 195, 195);
+    /* color: white; */
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     background-color:black;
-    font-size: 1em;
+    font-size: 16px;
     height: 280px;
     width: 400px;
-    line-height: 20px;
-    letter-spacing: 0.0125px;
+    line-height: 25px;
+    /* letter-spacing: 0.0125px; */
 }
 
 .main-title {
@@ -45,7 +46,8 @@
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     font-size: 21px;
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
+    padding-top: 25px;
 }
 
 .services-item {
@@ -54,7 +56,7 @@
     color: white;
     font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     padding-top: 20px;
-    padding-bottom: 95px;
+    padding-bottom: 75px;
     justify-items: center;
     align-items: center;
     width: 15em;
@@ -62,7 +64,7 @@
     margin-left: 1em;
     border: solid 4px rgb(130, 130, 130);
     text-align: center;
-    line-height: 19px;
+    line-height: 22px;
     letter-spacing: 0.5px;
 }
 
@@ -85,17 +87,21 @@
     padding-top: 25px;
 }
 
-.services-sub-section {
+/* .services-sub-section {
     padding-bottom: 1em;
     padding-top: 1em;
     padding-left: 2em;
     padding-right: 2em;
     height: 11em;
-}
+} */
 
 .services-item img {
     padding-bottom: 25px;
 }
+
+.hidden-dash {
+    color: transparent;
+  }
 
 .about-title {
     text-align: center;

@@ -40,7 +40,7 @@ export default class TheMenu extends React.Component {
                 </Link>
 
                     <Link onClick={() => this.closeMenu()} smooth to="/details/#services">
-                        Skills
+                        Services
                 </Link>
 
                     <Link onClick={() => this.closeMenu()} smooth to="/details/#about">
