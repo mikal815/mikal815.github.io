@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import SurfersDepot from '../../assets/images/surfersdepot.PNG';
+import SurferDepot from '../../assets/images/surfer-depot.PNG';
 import ShapeShifter from '../../assets/images/Shapes.PNG';
 import MTME from '../../assets/images/mtme.PNG';
 import BPS from '../../assets/images/BPS.PNG';
@@ -26,9 +26,9 @@ class SlideCarousel extends Component {
                     showStatus={false}
                     showIndicators={false}
                 >
-                    <a href="https://vast-mesa-70867.herokuapp.com/">
+                    <a href="https://surfer-depot.herokuapp.com/">
                         <div>
-                            <img alt="Surfer's Depot" src={SurfersDepot} />
+                            <img alt="Surfer Depot" src={SurferDepot} />
                         </div>
                     </a>
                     <a href="http://oceancity-baseball.surge.sh/">

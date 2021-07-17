@@ -7,7 +7,7 @@ import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
 import OCHS from '../../assets/images/OCHS.PNG'
 import Shapes from '../../assets/images/Shapes.PNG';
-import SurfersDepot from '../../assets/images/surfersdepot.PNG';
+import SurferDepot from '../../assets/images/surfer-depot.PNG';
 import frontend from '../../assets/icons/frontend-big.svg';
 import backend from '../../assets/icons/backend-big.svg';
 import database from '../../assets/icons/database-big.svg';
@@ -53,7 +53,7 @@ export default function Details() {
                 message
             }
 
-            axios.post("/api/sendMail", dataToSubmit).then(function (response) {
+            axios.post("/sendMail", dataToSubmit).then(function (response) {
                 console.log(response)
                 if (response.status === 200) {
                     openModal()
@@ -87,8 +87,8 @@ export default function Details() {
             <div className="main-title span-row-2" id="portfolio" >Portfolio</div>
 
             <div className="project">
-                <div className="inner-title">Surfer's Depot</div>
-                <img src={SurfersDepot} alt="Surfer's Depot" />
+                <div className="inner-title">Surfer Depot</div>
+                <a href="https://surfer-depot.herokuapp.com/"><img src={SurferDepot} alt="Surfer Depot" /></a>
                 <div className="caption">
                     Full stack e-commerce web app. Front-end tech used:
                     React, Material-UI, Bootstrap, HTML5, CSS3.
@@ -219,11 +219,11 @@ export default function Details() {
 
             <div className="span-row-2 contact-title" id="hire">Contact</div>
 
-            <div className="span-row-2 email">
+            {/* <div className="span-row-2 email">
                 mikal815@gmail.com
-            </div>
+            </div> */}
 
-            {/* <form className="form span-row-2" onSubmit={handleSubmit}>
+            <form className="form span-row-2" onSubmit={handleSubmit}>
                 <input className="input" id="name" placeholder="Name" value={name} onChange={handleChange}></input><br></br>
                 <input className="input" id="email" placeholder="Email" type="email" value={email} onChange={handleChange}></input><br></br>
                 <textarea className="textarea" id="message" placeholder="Message" value={message} onChange={handleChange}></textarea><br></br>
@@ -237,7 +237,8 @@ export default function Details() {
                         Close
                     </button>
                 </Modal>
-            </form> */}
+            </form>
+
 
             <footer className="footer span-row-2">
                 <Link smooth to="/">home</Link>

@@ -7,7 +7,7 @@ import BPS from '../../assets/images/BPS.PNG';
 import Icarus from '../../assets/images/Icarus.PNG';
 import MTME from '../../assets/images/mtme.PNG';
 import Shapes from '../../assets/images/Shapes.PNG';
-import SurfersDepot from '../../assets/images/surfersdepot.PNG';
+import SurferDepot from '../../assets/images/surfer-depot.PNG';
 import frontend from '../../assets/icons/frontend.svg';
 import backend from '../../assets/icons/backend.svg';
 import database from '../../assets/icons/database.svg';
@@ -91,10 +91,10 @@ export default function MobileDetails() {
             <div className="mobile-title span-row-2">Portfolio</div>
             <div className="mobile-details-container span-row-2">
                 <div className="mobile-project">
-                    <div className="project-title">Surfer's Depot</div>
-                    <img src={SurfersDepot} alt="Surfer's Depot" />
+                    <div className="project-title">Surfer Depot</div>
+                    <img src={SurferDepot} alt="Surfer Depot" />
                     <p>
-                        Surfer's Depot is a full stack e-commerce web application. Front-end technologies used:
+                        Surfer Depot is a full stack e-commerce web application. Front-end technologies used:
                         React, Material-UI, Bootstrap, HTML5, CSS3.
                         Back-end technologies used: MongoDB, Node.js, Redux, and Express.
                         This application showcases a login system with password hashing using JSON
@@ -102,7 +102,7 @@ export default function MobileDetails() {
                         results by brand, length, shape,
                         and price. Once logged in a user can add or remove items from their cart which persists with
                         MongoDB.
-                        Surfer's Depot also has an admin view which allows the administrator to add new products onto
+                        Surfer Depot also has an admin view which allows the administrator to add new products onto
                         the
                         site. The user must meet the proper authentication to access the admin area.
                     </p>
