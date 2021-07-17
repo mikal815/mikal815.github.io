@@ -88,7 +88,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">Surfer Depot</div>
-                <a href="https://surfer-depot.herokuapp.com/"><img src={SurferDepot} alt="Surfer Depot" /></a>
+                <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={SurferDepot} alt="Surfer Depot" /></a>
                 <div className="caption">
                     Full stack e-commerce web app. Front-end tech used:
                     React, Material-UI, Bootstrap, HTML5, CSS3.
@@ -105,7 +105,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">Icarus Travel</div>
-                <a href="http://superb-science.surge.sh/"><img src={Icarus} alt="Icarus" /></a>
+                <a href="http://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a>
                 <div className="caption">
                     Features include React on the front-end with carousel and varios animations.
                     </div>
@@ -113,7 +113,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">Shape Shifter</div>
-                <a href="http://fluffy-zoo.surge.sh/"><img src={Shapes} alt="Shape Shifter" /></a>
+                <a href="http://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a>
                 <div className="caption">
                     Memory game build with React. Goal is to click each shape
                     without clicking the same shape twice. Images are randomly repositioned
@@ -125,7 +125,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">Boardwalk Pier Stage</div>
-                <a href="http://the-event2021.surge.sh/" ><img src={BPS} alt="Boardwalk Pier Stage" /></a>
+                <a href="http://the-event2021.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a>
                 <div className="caption">
                     Featuring React on the frontend as well as a countdown clock which displays the amount of
                     days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
@@ -137,7 +137,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">OCHS Baseball</div>
-                <a href="http://oceancity-baseball.surge.sh/"><img src={OCHS} alt="OCHS Baseball" /></a>
+                <a href="http://oceancity-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS Baseball" /></a>
                 <div className="caption">
                     Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
                     </div>
@@ -145,7 +145,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">Music to My Ears</div>
-                <a href="https://music-to-my-ears-1.herokuapp.com/"><img src={MTME} alt="Music to My Ears" /></a>
+                <a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={MTME} alt="Music to My Ears" /></a>
                 <div className="caption">
                     Ear training app for musicians using intervals.
                     The app runs a sequence of two notes consecutively
@@ -164,9 +164,10 @@ export default function Details() {
                     <div className="services-inner-title">Frontend</div>
                     <img src={frontend} alt="frontend" />
                     <div>HTML5</div>
-                    <div>CSS3</div>
+                    <div>CSS3/Sass</div>
                     <div>Javascript(ES6)</div>
                     <div>React</div>
+                    <div>Redux</div>
                     <div>Responsive Design</div>
                     <div>Photoshop</div>
                 </div>
@@ -176,21 +177,24 @@ export default function Details() {
                     <div className="services-sub-section">
                         <div>Node.js</div>
                         <div>Express</div>
-                        <div>React</div>
-                        <div>Redux</div>
-                        <div>Rest API</div>
+                        <div>REST API</div>
                         <div>Payment systems</div>
+                        <div>Caching</div>
+                        <div>Configuration</div>
+                        <div className="hidden-dash">-</div>
+
                     </div>
                 </div>
                 <div className="services-item">
                     <div className="services-inner-title">Database</div>
                     <img src={database} alt="database" />
                     <div className="services-sub-section">
-                        <div>MySQL</div>
                         <div>MongoDB</div>
+                        <div>MySQL</div>
                         <div>Password hashing</div>
                         <div>Authentication</div>
                         <div>Authorization</div>
+                        <div className="hidden-dash">-</div>
                         <div className="hidden-dash">-</div>
                     </div>
                 </div>
@@ -200,9 +204,11 @@ export default function Details() {
                     <div className="services-sub-section">
                         <div>Debugging</div>
                         <div>Tech integration</div>
-                        <div>Project Management</div>
                         <div>Scaling</div>
+                        <div>Project Architecture</div>
                         <div>Data Scraping</div>
+                        <div>Version Control</div>
+                        <div>Deployment</div>
                         <div className="hidden-dash">-</div>
                     </div>
                 </div>
