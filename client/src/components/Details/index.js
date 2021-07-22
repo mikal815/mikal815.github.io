@@ -158,7 +158,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">OCHS BASEBALL</div>
-                <a href="http://oceancity-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS Baseball" /></a>
+                <a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS Baseball" /></a>
 
                 <div className="git-link-container">
                     <a href="https://github.com/mikal815/ochs" className="git-link">VIEW CODE</a>
