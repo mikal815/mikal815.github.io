@@ -84,11 +84,17 @@ export default function Details() {
         <div className="layout">
             {/* <Logo /> */}
             <Menu />
-            <div className="main-title span-row-2" id="portfolio" >Portfolio</div>
+            <div className="main-title span-row-2" id="portfolio" >PORTFOLIO</div>
 
             <div className="project">
-                <div className="inner-title">Surfer Depot</div>
-                <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={SurferDepot} alt="Surfer Depot" /></a>
+                <div className="inner-title">SURFER DEPOT</div>
+                <a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={SurferDepot} alt="Surfer Depot" /></a>
+
+                <div className="git-link-container">
+                    <a href="https://github.com/mikal815/surfer-depot" className="git-link">VIEW CODE</a>
+                </div>
+
                 <div className="caption">
                     Full stack e-commerce web app. Front-end tech used:
                     React, Material-UI, Bootstrap, HTML5, CSS3.
@@ -104,16 +110,26 @@ export default function Details() {
             </div>
 
             <div className="project">
-                <div className="inner-title">Icarus Travel</div>
+                <div className="inner-title">ICARUS TRAVEL</div>
                 <a href="http://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a>
+
+                <div className="git-link-container">
+                    <a href="https://github.com/mikal815/icarus" className="git-link">VIEW CODE</a>
+                </div>
+
                 <div className="caption">
                     Features include React on the front-end with carousel and varios animations.
                     </div>
             </div>
 
             <div className="project">
-                <div className="inner-title">Shape Shifter</div>
+                <div className="inner-title">SHAPE SHIFTER</div>
                 <a href="http://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a>
+
+                <div className="git-link-container">
+                    <a href="https://github.com/mikal815/clicky-game" className="git-link">VIEW CODE</a>
+                </div>
+
                 <div className="caption">
                     Memory game build with React. Goal is to click each shape
                     without clicking the same shape twice. Images are randomly repositioned
@@ -124,8 +140,13 @@ export default function Details() {
             </div>
 
             <div className="project">
-                <div className="inner-title">Boardwalk Pier Stage</div>
+                <div className="inner-title">BOARDWALK PIER STAGE</div>
                 <a href="http://the-event2021.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a>
+
+                <div className="git-link-container">
+                    <a href="https://github.com/mikal815/the-event" className="git-link">VIEW CODE</a>
+                </div>
+
                 <div className="caption">
                     Featuring React on the frontend as well as a countdown clock which displays the amount of
                     days, hours, minutes and seconds until the event. Other features include a carousel and a side menu drawer.
@@ -136,16 +157,26 @@ export default function Details() {
             </div>
 
             <div className="project">
-                <div className="inner-title">OCHS Baseball</div>
+                <div className="inner-title">OCHS BASEBALL</div>
                 <a href="http://oceancity-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS Baseball" /></a>
+
+                <div className="git-link-container">
+                    <a href="https://github.com/mikal815/ochs" className="git-link">VIEW CODE</a>
+                </div>
+
                 <div className="caption">
                     Featuring React for frontend framework, Twitter plugin and carousel. Layout using CSS Grid.
                     </div>
             </div>
 
             <div className="project">
-                <div className="inner-title">Music to My Ears</div>
+                <div className="inner-title">MUSIC TO MY EARS</div>
                 <a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={MTME} alt="Music to My Ears" /></a>
+
+                <div className="git-link-container">
+                    <a href="https://github.com/mikal815/ear-trainer" className="git-link">VIEW CODE</a>
+                </div>
+
                 <div className="caption">
                     Ear training app for musicians using intervals.
                     The app runs a sequence of two notes consecutively
@@ -158,10 +189,10 @@ export default function Details() {
             </div>
 
 
-            <div className="services-title span-row-2" id="services">Services</div>
+            <div className="services-title span-row-2" id="services">SERVICES</div>
             <div className="services-container span-row-2">
                 <div className="services-item">
-                    <div className="services-inner-title">Frontend</div>
+                    <div className="services-inner-title">FRONTEND</div>
                     <img src={frontend} alt="frontend" />
                     <div>HTML5</div>
                     <div>CSS3/Sass</div>
@@ -172,12 +203,12 @@ export default function Details() {
                     <div>Photoshop</div>
                 </div>
                 <div className="services-item">
-                    <div className="services-inner-title">Server</div>
+                    <div className="services-inner-title">SERVER</div>
                     <img src={backend} alt="server" />
                     <div className="services-sub-section">
                         <div>Node.js</div>
                         <div>Express</div>
-                        <div>REST API</div>
+                        <div>RESTful Web Services</div>
                         <div>Payment systems</div>
                         <div>Caching</div>
                         <div>Configuration</div>
@@ -186,7 +217,7 @@ export default function Details() {
                     </div>
                 </div>
                 <div className="services-item">
-                    <div className="services-inner-title">Database</div>
+                    <div className="services-inner-title">DATABASE</div>
                     <img src={database} alt="database" />
                     <div className="services-sub-section">
                         <div>MongoDB</div>
@@ -199,31 +230,31 @@ export default function Details() {
                     </div>
                 </div>
                 <div className="services-item">
-                    <div className="services-inner-title">Additional</div>
+                    <div className="services-inner-title">ADDITIONAL</div>
                     <img src={additional} alt="additional" />
                     <div className="services-sub-section">
                         <div>Debugging</div>
+                        <div>Testing/Error handling</div>
                         <div>Tech integration</div>
                         <div>Scaling</div>
                         <div>Project Architecture</div>
                         <div>Data Scraping</div>
                         <div>Version Control</div>
                         <div>Deployment</div>
-                        <div className="hidden-dash">-</div>
                     </div>
                 </div>
             </div>
 
-            <div className="span-row-2 about-title" id="about">About</div>
+            <div className="span-row-2 about-title" id="about">ABOUT</div>
 
             <div className="span-row-2 about-blurb">
                 Software developer building good looking functional websites and apps while taking into consideration the user experience and
-                accessability of the end product.
+                accessibility of the end product.
                 Complex design and developmet challenges are solved using familiarity with technologies and tools as well as coding abilities, analytical thinking, and creativity.
-                Certified "Full stack Web Developer" through UPenn LPS coding bootcamp & The New York Code + Design Academy.
+                Certified "Full Stack Web Developer" through UPenn LPS coding boot camp & The New York Code + Design Academy.  I have experience working collaboratively on programming projects.
             </div>
 
-            <div className="span-row-2 contact-title" id="hire">Contact</div>
+            <div className="span-row-2 contact-title" id="hire">CONTACT</div>
 
             {/* <div className="span-row-2 email">
                 mikal815@gmail.com

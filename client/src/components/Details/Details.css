@@ -172,3 +172,17 @@
     display: grid;
     text-align: center;
 }
+
+.git-link-container {
+    display: flex;
+    padding-bottom: 15px;
+    width: 400px;
+}
+
+.git-link {
+    color: rgb(163, 163, 163);
+    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding-right: 10px;
+}
