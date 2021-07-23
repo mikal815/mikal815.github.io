@@ -201,6 +201,7 @@ export default function Details() {
                     <div>Redux</div>
                     <div>Responsive Design</div>
                     <div>Photoshop</div>
+                    <div className="hidden-dash">-</div>
                 </div>
                 <div className="services-item">
                     <div className="services-inner-title">SERVER</div>
@@ -213,7 +214,7 @@ export default function Details() {
                         <div>Caching</div>
                         <div>Configuration</div>
                         <div className="hidden-dash">-</div>
-
+                        <div className="hidden-dash">-</div>
                     </div>
                 </div>
                 <div className="services-item">
@@ -225,6 +226,7 @@ export default function Details() {
                         <div>Password hashing</div>
                         <div>Authentication</div>
                         <div>Authorization</div>
+                        <div className="hidden-dash">-</div>
                         <div className="hidden-dash">-</div>
                         <div className="hidden-dash">-</div>
                     </div>
