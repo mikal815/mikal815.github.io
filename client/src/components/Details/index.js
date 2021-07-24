@@ -111,20 +111,20 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">ICARUS TRAVEL</div>
-                <a href="http://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a>
+                <a href="https://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a>
 
                 <div className="git-link-container">
                     <a href="https://github.com/mikal815/icarus" className="git-link">VIEW CODE</a>
                 </div>
 
                 <div className="caption">
-                    Features include React on the front-end with carousel and varios animations.
+                    Website built with HTML5, CSS, and Bootstrap.  Features scrolling image carousels and various animations.
                     </div>
             </div>
 
             <div className="project">
                 <div className="inner-title">SHAPE SHIFTER</div>
-                <a href="http://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a>
+                <a href="https://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a>
 
                 <div className="git-link-container">
                     <a href="https://github.com/mikal815/clicky-game" className="git-link">VIEW CODE</a>
@@ -141,7 +141,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">BOARDWALK PIER STAGE</div>
-                <a href="http://the-event2021.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a>
+                <a href="https://the-event2021.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a>
 
                 <div className="git-link-container">
                     <a href="https://github.com/mikal815/the-event" className="git-link">VIEW CODE</a>
