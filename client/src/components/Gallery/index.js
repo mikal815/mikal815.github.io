@@ -14,9 +14,9 @@ export default function Gallery() {
         <div className="container">
             <div id="carousel">
                 <figure><a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS" /></a></figure>
-                <figure><a href="http://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a></figure>
+                <figure><a href="https://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a></figure>
                 <figure><a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={SurferDepot} alt="Surfer Depot" /></a></figure>
-                <figure><a href="http://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a></figure>
+                <figure><a href="https://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a></figure>
                 <figure><a href="https://music-to-my-ears-1.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={MTME} alt="Music to My Ears" /></a></figure>
                 <figure><a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a></figure>
             </div>
