@@ -141,7 +141,7 @@ export default function Details() {
 
             <div className="project">
                 <div className="inner-title">BOARDWALK PIER STAGE</div>
-                <a href="https://the-event2021.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a>
+                <a href="https://bps-site.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={BPS} alt="Boardwalk Pier Stage" /></a>
 
                 <div className="git-link-container">
                     <a href="https://github.com/mikal815/the-event" className="git-link">VIEW CODE</a>
