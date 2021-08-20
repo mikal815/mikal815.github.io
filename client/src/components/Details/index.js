@@ -97,8 +97,8 @@ export default function Details() {
 
                 <div className="caption">
                     Full stack e-commerce web app. Front-end tech used:
-                    React, Material-UI, Bootstrap, HTML5, CSS3.
-                    Back-end tech used: MongoDB, Node.js, Redux, and Express.
+                    React, Redux, Material-UI, Bootstrap, HTML5, CSS3.
+                    Back-end tech used: MongoDB, Node.js, and Express.
                     Uses login system with password hashing. User can browse an inventory of surfboards and filter
                     results by brand, length, shape,
                     and price. A logged in user can add or remove items from their cart which persists with
