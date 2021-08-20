@@ -210,10 +210,10 @@ export default function Details() {
                         <div>Node.js</div>
                         <div>Express</div>
                         <div>RESTful Web Services</div>
+                        <div>Email Services</div>
                         <div>Payment systems</div>
                         <div>Caching</div>
                         <div>Configuration</div>
-                        <div className="hidden-dash">-</div>
                         <div className="hidden-dash">-</div>
                     </div>
                 </div>

@@ -13,7 +13,7 @@ export default function Gallery() {
     return (
         <div className="container">
             <div id="carousel">
-                <figure><a href="http://oceancity-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS" /></a></figure>
+                <figure><a href="https://ochs-baseball.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={OCHS} alt="OCHS" /></a></figure>
                 <figure><a href="http://superb-science.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Icarus} alt="Icarus" /></a></figure>
                 <figure><a href="https://surfer-depot.herokuapp.com/" target="_blank" rel="noopener noreferrer"><img src={SurferDepot} alt="Surfer Depot" /></a></figure>
                 <figure><a href="http://fluffy-zoo.surge.sh/" target="_blank" rel="noopener noreferrer"><img src={Shapes} alt="Shape Shifter" /></a></figure>
